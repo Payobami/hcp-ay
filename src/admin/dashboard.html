@@ -7,18 +7,120 @@
     <title>Human Capital Partners E-Learning Platform - Integrated Admin Dashboard</title>
     <link href="../css/output.css" rel="stylesheet" type="text/css" />
 </head>
-<body class="font-poppins text-base">
-    <nav class="gradient-1 flex justify-between items-center px-14 py-1.5">
+<body class="font-poppins text-base font-normal relative">
+    <nav class="gradient-1 flex justify-between items-center px-14 py-1.5 fixed top-0 z-60 w-full h-[60px]">
         <div class="flex gap-16">
-            <img src="../svg/logo.svg" />
-            <img src="../svg/menu.svg" />
+            <a><img src="../svg/logo.svg" /></a>
+            <img class="cursor-pointer" src="../svg/menu.svg" />
         </div>
         <div class="flex gap-[7px] leading-5 items-center">
             <div class="bg-white rounded-[5px] w-7 h-7 flex items-center justify-center">
                 <p>M</p>
             </div>
-            <a class="text-white text-sm font-medium">Admin@hcp.com</a>
+            <a class="text-white text-sm font-medium flex items-center gap-1.5">
+                Admin@hcp.com
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
         </div>
     </nav>
+
+    <main class="flex mt-[60px]">
+        <aside class="z-50 bg-white h-full w-[260px] min-h-screen py-8 shadow-[5px_-5px_7px_rgba(0,0,0,0.08)] fixed left-0">
+            <div class="mb-[26px] px-7">
+                <p class="text-mild-black text-lg mb-1 leading-7">Hi, Adeyemi Inc.</p>
+                <p class="text-[15px] font-light leading-5 text-[#979797]">Admin@hcp.com</p>
+            </div>
+
+            <a class="bg-[#F8F8F8] py-[9px] mb-3.5 flex items-center pl-10 gap-3.5 text-brand-black text-[15px]">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.90948 0H1.11798C0.501493 0 0 0.501493 0 1.11798V3.99288C0 4.60948 0.501493 5.11097 1.11798 5.11097H5.90948C6.52608 5.11097 7.02758 4.60948 7.02758 3.99288V1.11798C7.02758 0.501493 6.52608 0 5.90948 0Z" fill="#222222"/>
+                    <path d="M5.90948 6.38867H1.11798C0.501493 6.38867 0 6.89017 0 7.50677V14.2149C0 14.8314 0.501493 15.3328 1.11798 15.3328H5.90948C6.52608 15.3328 7.02758 14.8314 7.02758 14.2149V7.50677C7.02758 6.89017 6.52608 6.38867 5.90948 6.38867Z" fill="#222222"/>
+                    <path d="M14.2148 10.2219H9.42327C8.80667 10.2219 8.30518 10.7234 8.30518 11.34V14.2149C8.30518 14.8314 8.80667 15.3329 9.42327 15.3329H14.2148C14.8313 15.3329 15.3327 14.8314 15.3327 14.2149V11.34C15.3327 10.7234 14.8313 10.2219 14.2148 10.2219Z" fill="#222222"/>
+                    <path d="M14.2148 0H9.42327C8.80667 0 8.30518 0.501493 8.30518 1.11798V7.82608C8.30518 8.44268 8.80667 8.94418 9.42327 8.94418H14.2148C14.8313 8.94418 15.3327 8.44268 15.3327 7.82608V1.11798C15.3327 0.501493 14.8313 0 14.2148 0V0Z" fill="#222222"/>
+                </svg>
+                Dashboard
+            </a>
+            <p class="px-7 text-[13px] text-[#858585] mb-5">User Management</p>
+            <div class="pl-10 flex flex-col gap-[21px] text-[15px]">
+                <a class="flex items-center gap-3.5">
+                    <img src="../svg/users.svg" />
+                    User
+                </a>
+                <a class="flex items-center gap-3.5">
+                    <img src="../svg/users.svg" />
+                    Learning Group
+                </a>
+                <a class="flex items-center gap-3.5">
+                    <img src="../svg/course.svg" />
+                    Courses
+                </a>
+                <a class="flex items-center gap-3.5">
+                    <img src="../svg/course.svg" />
+                    Courses Categories
+                </a>
+                <a class="flex items-center gap-3.5">
+                    <img src="../svg/verified.svg" />
+                    Testimonials
+                </a>
+                <a class="flex items-center gap-3.5">
+                    <img src="../svg/analytics.svg" />
+                    Reports
+                </a>
+                <a class="flex items-center gap-3.5">
+                    <img src="../svg/settings.svg" />
+                    Settings
+                </a>
+                <a class="flex items-center gap-3.5">
+                    <img src="../svg/users.svg" />
+                    Log Out
+                </a>
+            </div>
+        </aside>
+
+        <!-- In the calculation calc(100vh - 60px), 60px is the height of the fixed nav. This is done to even the height of the main screen to prevent unnecessary vertical overflows -->
+        <section class="ml-[260px] pt-8 px-7 flex-1 relative w-full min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
+            <div class="flex items-center flex-wrap gap-[18px] relative z-20">
+                <div class="green-gradient rounded-md h-[150px] px-3.5 py-3 leading-5 w-[333px] flex flex-col justify-end items-start relative">
+                    <h3 class="text-white text-xl font-semibold">Users</h3>
+                    <p class="text-[#91FCD1] text-15 mb-1.5">You have 0 members.</p>
+                    <button class="bg-white rounded-[3px] shadow-[-7px_7px_15px_rgba(0,0,0,0.12)] px-3 py-1.5 text-[#137C53] text-[13px]">
+                        Manage Staff
+                    </button>
+                    <img class="absolute bottom-6 right-8" src="../svg/people.svg" />
+                </div>
+
+                <div class="bluish-gradient rounded-md h-[150px] px-3.5 py-3 leading-5 w-[333px] flex flex-col justify-end items-start relative">
+                    <h3 class="text-white text-xl font-semibold">Courses</h3>
+                    <p class="text-[#91FCD1] text-15 mb-1.5">You have 0 members.</p>
+                    <button class="bg-white rounded-[3px] shadow-[-7px_7px_15px_rgba(0,0,0,0.12)] px-3 py-1.5 text-[#6487E1] text-[13px]">
+                        Manage Courses
+                    </button>
+                    <img class="absolute bottom-6 right-8" src="../svg/teaching.svg" />
+                </div>
+
+                <div class="reddish-gradient rounded-md h-[150px] px-3.5 py-3 leading-5 w-[333px] flex flex-col justify-end items-start relative">
+                    <h3 class="text-white text-xl font-semibold">Reports</h3>
+                    <p class="text-[#91FCD1] text-15 mb-1.5">You have 0 members.</p>
+                    <button class="bg-white rounded-[3px] shadow-[-7px_7px_15px_rgba(0,0,0,0.12)] px-3 py-1.5 text-[#137C53] text-[13px]">
+                        View Reports
+                    </button>
+                    <img class="absolute bottom-6 right-8" src="../svg/results.svg" />
+                </div>
+
+                <div class="transparent-gradient rounded-md h-[150px] px-3.5 pt-6 pb-5 leading-5 w-[333px] flex flex-col items-start relative shadow-[-7px_7px_15px_rgba(0,0,0,0.13)] bg-white">
+                    <div class="relative z-10 h-full flex flex-col items-start">
+                        <h3 class="text-[#4F4F4F] text-[17px] font-semibold mb-1">Total Amount Paid</h3>
+                        <p class="text-[#4F4F4F] text-xs mb-1.5">₦270,000.00</p>
+                        <button class="block mt-auto bg-white rounded-[3px] shadow-[-7px_7px_15px_rgba(0,0,0,0.12)] px-3 py-1.5 text-[#7080DC] text-xs">
+                            View Reports
+                        </button>
+                    </div>
+                    <img class="absolute bottom-6 right-0" src="../img/settings.svg" />
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

@@ -8,4 +8,20 @@
     .gradient-1 {
         background: linear-gradient(96.6deg, #273658 23.09%, #182237 81.51%, #9BACD3 138.73%);
     }
+
+    .green-gradient {
+        background: linear-gradient(98.94deg, #20A354 1.5%, #16B074 99.55%);
+    }
+
+    .bluish-gradient {
+        background: linear-gradient(98.94deg, #107DD8 1.5%, #7173E0 99.55%);
+    }
+
+    .reddish-gradient {
+        background: linear-gradient(98.94deg, #DC356D 1.5%, #7460F4 99.55%);
+    }
+
+    .transparent-gradient {
+        background: linear-gradient(98.94deg, #FFFFFF 1.5%, #F2F2F2 99.55%);
+    }
 }
