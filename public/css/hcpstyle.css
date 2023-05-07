@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Muli|PT+Serif|Prociono|Slabo+27px|Source+Sans+Pro|Trirong|Ubuntu|Aref+Ruqaa|Great+Vibes|Philosopher|Roboto+Condensed|Bitter|Source+Sans+Pro|Acme|Raleway|Mulish:wght@200;400;700;900&display=swap|Merienda&display=swap");
+@font-face {
+  font-family: Work Sans;
+  src: url("./fonts/Work_Sans/static/WorkSans-Regular.ttf");
+}
+@font-face {
+  font-family: WorkSans-Semi-Bold;
+  src: url("./fonts/Work_Sans/static/WorkSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: WorkSans-Medium;
+  src: url("./fonts/Work_Sans/static/WorkSans-Medium.ttf");
+}
+@font-face {
+  font-family: Mulish-Extra-Bold;
+  src: url("./fonts/Mulish/static/Mulish-Black.ttf");
+}
+@font-face {
+  font-family: Mulish-Bold;
+  src: url("./fonts/Mulish/static/Mulish-Bold.ttf");
+}
+@font-face {
+  font-family: Mulish-Light;
+  src: url("./fonts/Mulish/static/Mulish-ExtraLight.ttf");
+}
+@font-face {
+  font-family: Mulish-Bold;
+  src: url("./fonts/Mulish/static/Mulish-Bold.ttf");
+}
+.workSan {
+  font-family: 'Work Sans', sans-serif !important;
+}
+.workSanMedium {
+  font-family: 'WorkSans-Medium';
+}
+.workSanBold {
+  font-family: 'WorkSans-Semi-Bold', sans-serif !important;
+  font-weight: 900;
+}
+.headerBg {
+  background: -webkit-linear-gradient(320.42deg, rgba(27,40,69,0.92) 8.59%, rgba(23,34,57,0.92) 45.36%, rgba(54,74,121,0.92) 81.31%);
+  background: -moz-linear-gradient(320.42deg, rgba(27,40,69,0.92) 8.59%, rgba(23,34,57,0.92) 45.36%, rgba(54,74,121,0.92) 81.31%);
+  background: -o-linear-gradient(320.42deg, rgba(27,40,69,0.92) 8.59%, rgba(23,34,57,0.92) 45.36%, rgba(54,74,121,0.92) 81.31%);
+  background: -ms-linear-gradient(320.42deg, rgba(27,40,69,0.92) 8.59%, rgba(23,34,57,0.92) 45.36%, rgba(54,74,121,0.92) 81.31%);
+  background: linear-gradient(129.58deg, rgba(27,40,69,0.92) 8.59%, rgba(23,34,57,0.92) 45.36%, rgba(54,74,121,0.92) 81.31%);
+  min-height: 300px;
+}
+.checked {
+  color: #ffa500;
+}
+.rBox {
+  background: #fff;
+  -webkit-box-shadow: 0px 4px 44px rgba(0,0,0,0.07);
+  box-shadow: 0px 4px 44px rgba(0,0,0,0.07);
+  border-radius: 5px;
+}
+.mulishLight {
+  font-family: 'Mulish-Light';
+}
+.mulishBolder {
+  font-family: 'Mulish-Extra-Bold';
+}
+.mulishBold {
+  font-family: 'Mulish-Bold';
+}
+.f-mulish {
+  font-family: 'Mulish', sans-serif;
+}
+.f-mulish-bolder {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 900;
+}
+.f-merienda {
+  font-family: 'Merienda', cursive;
+}
+.m-h-200 {
+  min-height: 200px;
+}
+.m-h-300 {
+  min-height: 300px;
+}
+.m-h-400 {
+  min-height: 400px;
+}
+.navBg {
+  background: -webkit-linear-gradient(320.42deg, #273658 8.59%, #182237 45.36%, #364a79 81.31%);
+  background: -moz-linear-gradient(320.42deg, #273658 8.59%, #182237 45.36%, #364a79 81.31%);
+  background: -o-linear-gradient(320.42deg, #273658 8.59%, #182237 45.36%, #364a79 81.31%);
+  background: -ms-linear-gradient(320.42deg, #273658 8.59%, #182237 45.36%, #364a79 81.31%);
+  background: linear-gradient(129.58deg, #273658 8.59%, #182237 45.36%, #364a79 81.31%);
+}
+.bg1 {
+  background: #222751;
+}
+.btnBackground1 {
+  background: #4d55a6;
+}
+.btnBackground2 {
+  background: #e0e3ff;
+}
+.primaryColor {
+  color: #273658;
+}
+.borderColor {
+  border-color: #a7a6f5 !important;
+}
+.textColor1 {
+  color: #ffe260;
+}
+.textColor2 {
+  color: #4d55a6;
+}
+.textColor2-1 {
+  color: #b9bddf;
+}
+.row1 {
+  background: #1f2c48 url("../images/studentLap.png") right 1px top -70px no-repeat;
+  background-image: #1f2c48 url("../images/studentLap.png") right 1px top -70px no-repeat;
+  min-height: 650px;
+  padding: 20px;
+}
+.row2 {
+  background: #e8eafa;
+  min-height: 400px;
+}
+.row3 {
+  background: #fff;
+  min-height: 300px;
+}
+.row5 {
+  min-height: 450px;
+  background: url("../images/shapes/Line10.svg") right 17vw top -1vw no-repeat, url("../images/shapes/Line12.png") right 15vw top 26px no-repeat, url("../images/shapes/Line11.png") right 13vw top -3px no-repeat, url("../images/shapes/Line13.png") right 20vw top 10vw no-repeat, url("../images/shapes/Line15.png") right 13vw top 5vw no-repeat, url("../images/shapes/Line14.png") right 7vw top -1vw no-repeat, -webkit-linear-gradient(rgba(2,8,63,0.58), rgba(2,8,63,0.58)), url("../images/bg/row5bg.png") no-repeat;
+  background: url("../images/shapes/Line10.svg") right 17vw top -1vw no-repeat, url("../images/shapes/Line12.png") right 15vw top 26px no-repeat, url("../images/shapes/Line11.png") right 13vw top -3px no-repeat, url("../images/shapes/Line13.png") right 20vw top 10vw no-repeat, url("../images/shapes/Line15.png") right 13vw top 5vw no-repeat, url("../images/shapes/Line14.png") right 7vw top -1vw no-repeat, -moz-linear-gradient(rgba(2,8,63,0.58), rgba(2,8,63,0.58)), url("../images/bg/row5bg.png") no-repeat;
+  background: url("../images/shapes/Line10.svg") right 17vw top -1vw no-repeat, url("../images/shapes/Line12.png") right 15vw top 26px no-repeat, url("../images/shapes/Line11.png") right 13vw top -3px no-repeat, url("../images/shapes/Line13.png") right 20vw top 10vw no-repeat, url("../images/shapes/Line15.png") right 13vw top 5vw no-repeat, url("../images/shapes/Line14.png") right 7vw top -1vw no-repeat, -o-linear-gradient(rgba(2,8,63,0.58), rgba(2,8,63,0.58)), url("../images/bg/row5bg.png") no-repeat;
+  background: url("../images/shapes/Line10.svg") right 17vw top -1vw no-repeat, url("../images/shapes/Line12.png") right 15vw top 26px no-repeat, url("../images/shapes/Line11.png") right 13vw top -3px no-repeat, url("../images/shapes/Line13.png") right 20vw top 10vw no-repeat, url("../images/shapes/Line15.png") right 13vw top 5vw no-repeat, url("../images/shapes/Line14.png") right 7vw top -1vw no-repeat, -ms-linear-gradient(rgba(2,8,63,0.58), rgba(2,8,63,0.58)), url("../images/bg/row5bg.png") no-repeat;
+  background: url("../images/shapes/Line10.svg") right 17vw top -1vw no-repeat, url("../images/shapes/Line12.png") right 15vw top 26px no-repeat, url("../images/shapes/Line11.png") right 13vw top -3px no-repeat, url("../images/shapes/Line13.png") right 20vw top 10vw no-repeat, url("../images/shapes/Line15.png") right 13vw top 5vw no-repeat, url("../images/shapes/Line14.png") right 7vw top -1vw no-repeat, linear-gradient(rgba(2,8,63,0.58), rgba(2,8,63,0.58)), url("../images/bg/row5bg.png") no-repeat;
+  margin-top: 40px;
+}
+.row6Bg {
+  min-height: 450px;
+  background: url("../images/shapes/Ellipse 20.svg") 10vw top no-repeat, url("../images/shapes/Ellipse 18.svg") left 20vw top 3vw no-repeat, url("../images/shapes/Ellipse 19.svg") left 30vw top 5vw no-repeat, url("../images/shapes/Ellipse 21.svg") right 5vw top 0px no-repeat, url("../images/shapes/Ellipse 22.svg") right 15vw top 10vw no-repeat, url("../images/shapes/Ellipse 29.svg") right 25vw bottom 10vw no-repeat, url("../images/shapes/Ellipse 28.svg") bottom 1vw right 10vw no-repeat, url("../images/shapes/Ellipse 24.svg") left 10vw bottom 10vw no-repeat, url("../images/shapes/Ellipse 26.svg") left 25vw bottom 10vw no-repeat, url("../images/shapes/Ellipse 25.svg") bottom -1vw left 30vw no-repeat;
+  margin-top: 40px;
+}
+.row7 {
+  min-height: 400px;
+}
+.bgWorld {
+  background: url("../images/bg/bgx.svg") no-repeat;
+  background-size: contain;
+  background-position: right;
+  min-height: 400px;
+}
+.footer {
+  background: #222751;
+  min-height: 400px;
+  margin-top: 0px;
+}
+.borderLine:before {
+  content: url("../images/shapes/Line.svg");
+  float: right;
+  display: block;
+  position: relative;
+  margin-top: 50px;
+}
+.aboutValue:before {
+  content: "__";
+  display: block;
+  float: right;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.dquote:before {
+  content: url("../images/icons/dqoute.svg");
+  display: block;
+}
+.bsign:after {
+  content: url("../images/icons/sign.svg");
+  display: block;
+  text-align: center;
+}
+.grayBg {
+  filter: grayscale(100%);
+}
+.teamBg {
+  min-height: 470px;
+  filter: grayscale(100%);
+  z-index: -10;
+  width: 100%;
+  background-size: cover;
+}
+.teamBg:hover {
+  filter: grayscale(30%);
+  cursor: wait;
+}
+.teamInfo {
+  min-height: 100px;
+  z-index: 99999999;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+.marketBg {
+  background: #d2d2d2 url("../images/bg/marketplace.png");
+  min-height: 500px;
+  width: auto;
+  padding: 50px;
+}
+.marketBgPosition {
+  min-height: 500px;
+  background: url("../images/marketplace/image30.png") left 80px top 35px no-repeat, url("../images/marketplace/image31.png") left 30px top 150px no-repeat, url("../images/marketplace/image32.png") left 20px top 250px no-repeat, url("../images/marketplace/image33.png") left 75px top 350px no-repeat, url("../images/marketplace/image37.png") bottom 65px right 100px no-repeat, url("../images/marketplace/image35.png") bottom 255px right 20px no-repeat, url("../images/marketplace/image34.png") bottom 360px right 30px no-repeat, url("../images/marketplace/image36.png") bottom 150px right 40px no-repeat;
+}
+.metacityBg {
+  background: #d2d2d2 url("../images/bg/metacity.png");
+  min-height: 500px;
+  width: auto;
+  padding: 50px;
+}
+.bloomOneBg {
+  background: -webkit-linear-gradient(334.8deg, rgba(197,255,244,0.208) 29.16%, rgba(188,138,227,0.203) 95.62%);
+  background: -moz-linear-gradient(334.8deg, rgba(197,255,244,0.208) 29.16%, rgba(188,138,227,0.203) 95.62%);
+  background: -o-linear-gradient(334.8deg, rgba(197,255,244,0.208) 29.16%, rgba(188,138,227,0.203) 95.62%);
+  background: -ms-linear-gradient(334.8deg, rgba(197,255,244,0.208) 29.16%, rgba(188,138,227,0.203) 95.62%);
+  background: linear-gradient(115.2deg, rgba(197,255,244,0.208) 29.16%, rgba(188,138,227,0.203) 95.62%);
+  min-height: 650px;
+  padding-bottom: 40px;
+}
+.pinkBg {
+  background: rgba(185,189,223,0.15);
+  min-height: 600px;
+  padding-top: 50px;
+}
+.courseBg {
+  background: #222751 url("../images/bg/worldgraphic.png") no-repeat;
+  background-position: right;
+  min-height: 400px;
+}
+.course-content {
+  min-height: 500px;
+  padding-top: 50px;
+}
+.course-content h3 {
+  font-size: 20px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  font-family: 'Mulish-Bold';
+}
+.course-content p {
+  color: #989696;
+  font-family: 'Mulish', sans-serif;
+  padding-top: 10px;
+  text-align: justify;
+}
+.course-content img {
+  margin-top: 10px;
+}
+.clearfix,
+.clearfix::after {
+min-height
+  content: "";
+  clear: both;
+  display: table;
+}
+#social-links ul li {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.whyRow {
+  background: -webkit-linear-gradient(320.42deg, rgba(39,54,88,0.9) 8.59%, rgba(24,34,55,0.9) 45.36%, rgba(54,74,121,0.9) 81.31%);
+  background: -moz-linear-gradient(320.42deg, rgba(39,54,88,0.9) 8.59%, rgba(24,34,55,0.9) 45.36%, rgba(54,74,121,0.9) 81.31%);
+  background: -o-linear-gradient(320.42deg, rgba(39,54,88,0.9) 8.59%, rgba(24,34,55,0.9) 45.36%, rgba(54,74,121,0.9) 81.31%);
+  background: -ms-linear-gradient(320.42deg, rgba(39,54,88,0.9) 8.59%, rgba(24,34,55,0.9) 45.36%, rgba(54,74,121,0.9) 81.31%);
+  background: linear-gradient(129.58deg, rgba(39,54,88,0.9) 8.59%, rgba(24,34,55,0.9) 45.36%, rgba(54,74,121,0.9) 81.31%);
+  min-height: 450px;
+  margin-top: 50px;
+}
+.customerRow {
+  min-height: 450px;
+}
+.joinCommunity {
+  background: -webkit-linear-gradient(320.42deg, rgba(40,39,122,0.05) 8.59%, rgba(54,29,86,0.05) 45.36%, rgba(37,68,114,0.05) 81.31%);
+  background: -moz-linear-gradient(320.42deg, rgba(40,39,122,0.05) 8.59%, rgba(54,29,86,0.05) 45.36%, rgba(37,68,114,0.05) 81.31%);
+  background: -o-linear-gradient(320.42deg, rgba(40,39,122,0.05) 8.59%, rgba(54,29,86,0.05) 45.36%, rgba(37,68,114,0.05) 81.31%);
+  background: -ms-linear-gradient(320.42deg, rgba(40,39,122,0.05) 8.59%, rgba(54,29,86,0.05) 45.36%, rgba(37,68,114,0.05) 81.31%);
+  background: linear-gradient(129.58deg, rgba(40,39,122,0.05) 8.59%, rgba(54,29,86,0.05) 45.36%, rgba(37,68,114,0.05) 81.31%);
+  min-height: 350px;
+}
+.storyBox {
+  min-height: 280px;
+  background: -webkit-linear-gradient(270deg, #e4ebfd 0%, #eff9ff 100%);
+  background: -moz-linear-gradient(270deg, #e4ebfd 0%, #eff9ff 100%);
+  background: -o-linear-gradient(270deg, #e4ebfd 0%, #eff9ff 100%);
+  background: -ms-linear-gradient(270deg, #e4ebfd 0%, #eff9ff 100%);
+  background: linear-gradient(180deg, #e4ebfd 0%, #eff9ff 100%);
+  border: 1.5px solid rgba(0,0,0,0.06);
+  border-radius: 15px !important;
+}
+@media only screen and (max-width: 650px) {
+  .row1 {
+    background: #222751 !important;
+  }
+  .borderLine:before {
+    content: none;
+    float: right;
+    display: block;
+    position: relative;
+    margin-top: 10px !important;
+  }
+  .mFont {
+    font-family: 'Ubuntu' !important;
+  }
+}
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1800px !important;
+  }
+}
