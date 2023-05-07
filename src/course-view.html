@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../public/css/hcpstyle.css" />
+    <link rel="stylesheet" type="text/css" href="../public/css/tailwind.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../images/icon.jpg" />
+
+
+    <title>HCP</title>
+</head>
+
+<body>
+    <section>
+        <nav class="px-2 dark:bg-gray-800 dark:border-gray-700 navBg">
+            <div class="container flex flex-wrap justify-between items-center mx-auto px-4 py-5">
+                <a href="./index.html" class="flex">
+                    <img src='../public/images/hcp-logo.svg' alt="Logo" class="h-8x w-8x mr-2">
+
+                </a>
+                <button data-collapse-toggle="mobile-menu" type="button"
+                    class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500"
+                    aria-controls="mobile-menu-2" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+
+                <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+
+                    <ul class="flex flex-col md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+
+                        <li>
+                            <a href="#"
+                                class=" focus:outline-none f-mulish flex justify-between items-center py-3 pr-4 pl-3 w-full text-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <button id="dropdownNavbarLin" data-dropdown-toggle="aboutNavbar"
+                                class=" focus:outline-none f-mulish flex justify-between items-center py-3 pr-4 pl-3 w-full text-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+                                Course Categories
+                            </button>
+
+                            <!-- Dropdown menu -->
+                            <div id="aboutNavbar" class="hidden px-2 py-2 z-10 w-64 text-base list-none ">
+
+                                <div class="bg-white rounded shadow dark:bg-gray-700 dark:divide-gray-600  " style="">
+                                    <ul class="py-1" aria-labelledby="dropdownLargeButton">
+
+                                        <li class="">
+                                            <a href="./ds.html"
+                                                class="flex flex-row gap-4 f-mulish py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">
+                                                <div class="bg-gray-700 rounded-full"></div>
+                                                <div>
+                                                    <span>Data Science</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="">
+                                            <a href="./networking.html"
+                                                class="flex flex-row gap-4 f-mulish py-2  text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">
+
+                                                <div class="bg-gray-700 rounded-full"></div>
+                                                <div>
+                                                    <span>Networking</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="">
+                                            <a href="/#"
+                                                class="flex flex-row gap-4 f-mulish py-2  text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">
+                                                <div class="bg-gray-700 rounded-full"></div>
+                                                <div>
+                                                    <span>Health Specialist</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="/#"
+                                                class="flex flex-row gap-4 f-mulish py-2  text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">
+                                                <div class="bg-gray-700 rounded-full"></div>
+                                                <div>
+                                                    <span>Project Management</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="/#"
+                                                class="flex flex-row gap-4 f-mulish py-2  text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">
+                                                <div class="bg-gray-700 rounded-full"></div>
+                                                <div>
+                                                    <span>Software Development</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+                        <li class="mb-2">
+
+                            <button id="dropdownNavbarLin" data-dropdown-toggle="productNavbar"
+                                class=" focus:outline-none f-mulish flex justify-between items-center py-3 pr-4 pl-3 w-full text-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+                                <i class="fa fa-shopping-cart" style="font-size: 20px"></i>
+                            </button>
+
+
+                            <!-- Dropdown menu -->
+                            <div id="productNavbar" class="hidden px-2 py-2 z-10 w-64 text-base list-none">
+
+                                <div class="bg-white rounded shadow dark:bg-gray-700 dark:divide-gray-600  " style="">
+                                    <ul class="py-1" aria-labelledby="dropdownLargeButton">
+
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+
+
+                        <li class="mb-3">
+                            <a href="auth/login.html" id="dropdownNavbarLin"
+                                class="focus:outline-none f-mulish flex justify-between items-center py-3 pr-4 pl-3 w-full text-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+                                Sign in
+                            </a>
+                        </li>
+
+                        <li class="md:mt-0 mt-10">
+                            <a href="auth/register.html"
+                                class="py-2 f-mulish px-10 text-white rounded-md hover:bg-gray-500 hover:text-black transition duration-300 btnBackground1"
+                                style="margin-top: -5px !important">
+                                Get Started
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <nav class="bg-white shadow-lg" style="background: #222751" hidden>
+            <div class=" container mx-auto px-4 py-5">
+                <div class="flex justify-between">
+
+                    <div class="flex space-x-7">
+                        <div>
+                            <!-- Website Logo -->
+                            <a href="#" class="flex items-center py-4 px-">
+                                <img src='images/afen_logo.png' alt="Logo" class="h-8x w-8x mr-2">
+
+                            </a>
+                        </div>
+                        <!-- Primary Navbar items -->
+                        <div class="hidden md:flex items-center space-x-1">
+
+                        </div>
+                    </div>
+
+
+                    <!-- Secondary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-3 ">
+
+
+                        <span>
+
+                            <button href="#" id="dropdownNavbarLinkx" data-dropdown-toggle="dropdownNavbar"
+                                class="py-4 px-5 text-white hover:text-yellow-700 transition duration-300 f-mulish dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent focus:border-none active:border-transparent">
+                                About Us
+                            </button>
+
+                            <div id="dropdownNavbar"
+                                class="hidden z-10 w-56 text-base list-none bg-white rounded  shadow dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Settings</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Earnings</a>
+                                    </li>
+                                </ul>
+                                <div class="py-1">
+                                    <a href="#"
+                                        class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign
+                                        out</a>
+                                </div>
+                            </div>
+                        </span>
+
+                        <a href=""
+                            class="py-4 px-5 text-white hover:text-yellow-700 transition duration-300 f-mulish">Products</a>
+                        <a href=""
+                            class="py-4 px-5 text-white hover:text-yellow-700 transition duration-300 f-mulish">Resources</a>
+
+
+                        &emsp;
+
+                        <a href="#"
+                            class="py-2 px-5 text-white rounded-md hover:bg-gray-500 hover:text-black transition duration-300 btnBackground1">
+                            Buy on Pancakeswap
+
+                        </a>
+                    </div>
+
+
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <ul class="pl-5">
+                    <li class="active"><a href="#" class="block text-sm px-2 py-4 text-white">Home</a></li>
+                    <li><a href="#services"
+                            class="block text-sm px-2 py-4 text-white hover:bg-yellow-600 transition duration-300">Services</a>
+                    </li>
+                    <li><a href="#about"
+                            class="block text-sm px-2 py-4 text-white hover:bg-orange-600 transition duration-300">About</a>
+                    </li>
+                    <li><a href="#contact"
+                            class="block text-sm px-2 py-4 text-white hover:bg-orange-600 transition duration-300">Contact
+                            Us</a></li>
+                </ul>
+            </div>
+            <script>
+                const btn = document.querySelector("button.mobile-menu-button");
+                const menu = document.querySelector(".mobile-menu");
+
+                btn.addEventListener("click", () => {
+                    menu.classList.toggle("hidden");
+                });
+            </script>
+        </nav>
+    </section>
+    <section class="headerBg">
+        <div class="container mx-auto">
+            <div class="max-w-2xl pt-10 px-3">
+                <h2 class="text-white text-3xl workSanBold">The Complete 2023 Web Development Bootcamp</h2>
+                <div class="text-white workSan">
+                    Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB,
+                    Web3 and Apps
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container mx-auto py-20 md:px-0 px-5" style="min-height: 500px;">
+        <div class=""></div>
+        <div class="grid grid-cols-12 md:gap-20">
+            <div class="md:col-span-7 col-span-12">
+                <div class="border px-10 py-4 w-full" style="min-height: 300px;">
+                    <h3 class="workSanBold text-xl">What you’ll learn</h3>
+
+                    <div class="grid grid-cols-12 md:gap-10 workSan mt-5" style="color: #182237">
+                        <div class="md:col-span-6 col-span-12">
+                            <ul class="list-disc">
+                                <li class="mb-4">Build 16 web development projects for your portfolio, ready to apply
+                                    for junior
+                                    developer jobs.</li>
+                                <li class="mb-4">After the course you will be able to build ANY website you want.</li>
+                                <li class="mb-4">Work as a freelance web developer.</li>
+                                <li class="mb-4">Master backend development with Node</li>
+                            </ul>
+                        </div>
+
+                        <div class="md:col-span-6 col-span-12">
+                            <ul class="list-disc">
+                                <li class="mb-4">Learn the latest technologies, including Javascript, React, Node and
+                                    even Web3 development.</li>
+                                <li class="mb-4">Build fully-fledged websites and web apps for your startup or business.
+                                </li>
+                                <li class="mb-4">Master frontend development with React.</li>
+                                <li class="mb-4">Learn professional developer best practices.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="workSan mt-10 leading-6">
+
+                    <h2 class="workSanBold my-5" style="color:#182237">Description</h2>
+                    <div class="text-sm">
+                        <p>
+                            Welcome to the Complete Web Development Bootcamp, the only course you need to learn to code
+                            and
+                            become a full-stack web developer. With 150,000+ ratings and a 4.8 average, my Web
+                            Development
+                            course is one of the HIGHEST RATED courses in the history of Udemy!
+                        </p>
+                        <p>
+                            At 65+ hours, this Web Development course is without a doubt the most comprehensive web
+                            development course available online. Even if you have zero programming experience, this
+                            course
+                            will take you from beginner to mastery. Here's why:
+                            The course is taught by the lead instructor at the App Brewery, London's leading in-person
+                            programming bootcamp.
+                        </p>
+                        <p>
+                            The course has been updated to be 2023 ready and you'll be learning the latest tools and
+                            technologies used at large companies such as Apple, Google and Netflix.
+                            This course doesn't cut any corners, there are beautiful animated explanation videos and
+                            tens of
+                            real-world projects which you will get to build.
+                        </p>
+                        <p>
+                            The curriculum was developed over a period of four years, with comprehensive student testing
+                            and
+                            feedback.
+                        </p>
+                        <p>
+                            We've taught over a million students how to code and many have gone on to change their lives
+                            by
+                            becoming professional developers or starting their own tech startup.
+                            You'll save yourself over $12,000 by enrolling, but still get access to the same teaching
+                            materials and learn from the same instructor and curriculum as our in-person programming
+                            bootcamp.
+                        </p>
+                        <p>
+                            The course is constantly updated with new content, with new projects and modules determined
+                            by
+                            students - that's you!
+                        </p>
+                        <p>
+
+                            We'll take you step-by-step through engaging video tutorials and teach you everything you
+                            need
+                            to know to succeed as a web developer. <a href="#" class="workSanBold text-blue-900">READ
+                                MORE</a>
+
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="mt-20">
+                    <h3 class="workSanBold text-2xl">Course Review</h3>
+                    <div class="">
+                        <div class="flex flex-row gap-5">
+                            <div class="pr- flex-shrink-0 rounded-md">
+                                <h2 class="text-4xl workSanBold">4.9</h2>
+                            </div>
+                            <div class="px-  py-3 rounded-md f-mulish text-sm">
+                                <div class="workSanBold text-sm border-b">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <div class="workSan">60 reviews</div>
+                            </div>
+                        </div>
+
+
+                        <div class="max-w-xl mx-auto mt-10">
+                            <h2 class="workSanBold">Top Reviews from participants of this course</h2>
+
+                            <div class="mt-10">
+
+                                <div class="mt-5">
+                                    <span class="block date workSanBold primaryColor">March 26, 2023</span>
+                                    <span class="block rname workSan text-gray-700">Review by: Emily Stones</span>
+                                    <div class="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+
+                                    <div class="reviewx italic workSan text-gray-600 mt-3">“I loved taking this course and am very excited to implement what I learned into my daily life!”</div>
+                                </div>
+                                
+                                <div class="mt-5">
+                                    <span class="block date workSanBold primaryColor">March 26, 2023</span>
+                                    <span class="block rname workSan text-gray-700">Review by: Emily Stones</span>
+                                    <div class="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+
+                                    <div class="reviewx italic workSan text-gray-600 mt-3">“I loved taking this course and am very excited to implement what I learned into my daily life!”</div>
+                                </div>
+
+                                <div class="mt-5">
+                                    <span class="block date workSanBold primaryColor">March 26, 2023</span>
+                                    <span class="block rname workSan text-gray-700">Review by: Emily Stones</span>
+                                    <div class="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+
+                                    <div class="reviewx italic workSan text-gray-600 mt-3">“I loved taking this course and am very excited to implement what I learned into my daily life!”</div>
+                                </div>
+
+                                <div class="mt-5">
+                                    <span class="block date workSanBold primaryColor">March 26, 2023</span>
+                                    <span class="block rname workSan text-gray-700">Review by: Emily Stones</span>
+                                    <div class="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+
+                                    <div class="reviewx italic workSan text-gray-600 mt-3">“I loved taking this course and am very excited to implement what I learned into my daily life!”</div>
+                                </div>
+
+                                <div class="mt-10">
+                                    <a href="#" class="py-3 px-3 border rounded-md text-white workSan" style="background:#273658">See all reviews</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-span-4 col-span-12">
+                <div class="rBox px-5 py-10" style="min-height: 300px;">
+                    <div class="">
+                        <span class="block">-Price</span>
+                        <h3 class="text-xl primaryColor workSanBold ml-2">Free</h3>
+
+                        <div class="mt-10">
+                            <a href="#" class="py-3 px-3 w-full block border text-center rounded-md text-white workSan" style="background:#273658">Enroll Now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="mt-20">
+        <div class="mx-auto md:max-w-6xl  md:px-1 px-5">
+
+            <div class="mb-5">
+                <p class="primaryColor text-2xl workSanBold">Explore other course category</p>
+            </div>
+
+
+            <div class="grid grid-cols-12 md:gap-3">
+
+                <div class="md:col-span-3 col-span-12 mb-4">
+                    <a href="#" class="bg-white shadow-md w-full rounded-lg">
+                        <div class="flex flex-row gap-5">
+                            <div class="pr- flex-shrink-0 rounded-md">
+                                <img class="float-left mr-2x md:text-left text-center"
+                                    src="../public/images/Rectangle 52.svg" width="81">
+                            </div>
+                            <div class="px-  py-3 rounded-md f-mulish text-sm">
+                                <div class="workSanBold text-sm">Agriculture</div>
+                                <div class="workSan">12 courses</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="md:col-span-3 col-span-12 mb-4">
+                    <a href="#" class="bg-white shadow-md w-full rounded-lg">
+                        <div class="flex flex-row gap-5">
+                            <div class="pr- flex-shrink-0 rounded-md">
+                                <img class="float-left mr-2x md:text-left text-center"
+                                    src="../public/images/Rectangle 51.svg" width="81">
+                            </div>
+                            <div class="px-  py-3 rounded-md f-mulish text-sm">
+                                <div class="workSanBold text-sm">Data Science</div>
+                                <div class="workSan">20 courses</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="md:col-span-3 col-span-12 mb-4">
+                    <a href="#" class="bg-white shadow-md w-full rounded-lg">
+                        <div class="flex flex-row gap-5">
+                            <div class="pr- flex-shrink-0 rounded-md">
+                                <img class="float-left mr-2x md:text-left text-center"
+                                    src="../public/images/Rectangle 50.svg" width="81">
+                            </div>
+                            <div class="px-  py-3 rounded-md f-mulish text-sm">
+                                <div class="workSanBold text-sm">Networking</div>
+                                <div class="workSan">20 courses</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="md:col-span-3 col-span-12 mb-4">
+                    <a href="#" class="bg-white shadow-md w-full rounded-lg">
+                        <div class="flex flex-row gap-5">
+                            <div class="pr- flex-shrink-0 rounded-md">
+                                <img class="float-left mr-2x md:text-left text-center"
+                                    src="../public/images/Rectangle 56.svg" width="81">
+                            </div>
+                            <div class="px-  py-3 rounded-md f-mulish text-sm">
+                                <div class="workSanBold text-sm">Software</div>
+                                <div class="workSan">30 courses</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="md:col-span-3 col-span-12 mb-4">
+                    <a href="#" class="bg-white shadow-md w-full rounded-lg">
+                        <div class="flex flex-row gap-5">
+                            <div class="pr- flex-shrink-0 rounded-md">
+                                <img class="float-left mr-2x md:text-left text-center"
+                                    src="../public/images/Rectangle 55.svg" width="81">
+                            </div>
+                            <div class="px-  py-3 rounded-md f-mulish text-sm">
+                                <div class="workSanBold text-sm">Management</div>
+                                <div class="workSan">30 courses</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="md:col-span-3 col-span-12 mb-4">
+                    <a href="#" class="bg-white shadow-md w-full rounded-lg">
+                        <div class="flex flex-row gap-5">
+                            <div class="pr- flex-shrink-0 rounded-md">
+                                <img class="float-left mr-2x md:text-left text-center"
+                                    src="../public/images/Rectangle 54.svg" width="81">
+                            </div>
+                            <div class="px-  py-3 rounded-md f-mulish text-sm">
+                                <div class="workSanBold text-sm">Entrepreneur</div>
+                                <div class="workSan">50 courses</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="md:col-span-3 col-span-12 mb-4">
+                    <a href="#" class="bg-white shadow-md w-full rounded-lg">
+                        <div class="flex flex-row gap-5">
+                            <div class="pr- flex-shrink-0 rounded-md">
+                                <img class="float-left mr-2x md:text-left text-center"
+                                    src="../public/images/Rectangle 53.svg" width="81">
+                            </div>
+                            <div class="px-  py-3 rounded-md f-mulish text-sm">
+                                <div class="workSanBold text-sm">Health</div>
+                                <div class="workSan">7 courses</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="joinCommunity pt-24">
+
+        <div class="container max-w-3xl mx-auto">
+            <h2 class="md:text-3xl text-center workSanBold">Join Our Community of Lifelong Learners and Transform Your
+                Future Today!</h2>
+
+        </div>
+
+        <div class="mx-auto mt-5 w-full my-28" style="margin-top: 60px;">
+            <div class="mx-auto text-center">
+                <a href="#" class="py-3 px-3 border rounded-md text-white" style="background:#273658">Get Started</a>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+    <section class="footer">
+
+        <div class="container max-w-6xlx mx-auto pt-24">
+
+            <div class="grid grid-cols-12 lg:gap-16 gap-1 md:px-0 px-3">
+
+                <div class="md:col-span-5 col-span-12">
+                    <div class="flex flex-col gap-4 text-gray-500">
+                        <h3 class="text-white mulishBold">HCP E-learning</h3>
+
+                        <p class="workSan">The HCP e-learning (HCPel) is designed to make your learning experience
+                            flexible. The world is constantly changing therefore we need to provide a platform that
+                            provides world class learning interventions from inception to delivering results.</p>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 col-span-6 mb-3">
+                    <div class="flex flex-col gap-4 text-gray-500">
+                        <h3 class="text-white mulishBold">Company</h3>
+
+                        <a href="#" class="mulish">HCP</a>
+                        <a href="#" class="mulish">E-learning</a>
+                        <a href="#" class="mulish">Careers</a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 col-span-6">
+                    <div class="flex flex-col gap-4 text-gray-500">
+                        <h3 class="text-white mulishBold">Resources</h3>
+
+                        <a href="#" class="mulish">Resources Centre</a>
+                        <a href="#" class="mulish">Media Centre</a>
+                        <a href="#" class="mulish">Blogs</a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-3 col-span-12">
+                    <div class="flex flex-col gap-4 text-gray-500">
+                        <h3 class="text-white mulishBold">Contact</h3>
+
+                        <a href="#" class="mulish">Address</a>
+                        <p>95B Badagry Way, Dolphin Estate, Ikoyi, P. O. Box 80051, Lafiaji Lagos, Nigeria</p>
+
+                        <a href="#" class="mulish text-white">Phone</a>
+                        <div class="">
+                            <a href="tel: +2347033023265" class="block">+234 703 302 3265</a>
+                            <a href="tel: +2348164629608" class="block">+234 816 462 9608</a>
+                        </div>
+                        <a href="#" class="mulish text-white">Email</a>
+                        <div>
+                            <a href="mail:contactus@hcp-ng.com">contactus@hcp-ng.com</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="mt-2 md:px-0 px-5 border-t border-white pt-4 pb-24">
+                <div class="flex md:flex-row flex-col gap-16">
+                    <div class="" style="margin-top: -66px">
+
+                    </div>
+                    <p class="text-gray-300 mulish">
+                        ©2019 HUMAN CAPITAL PARTNERS | ALL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+    <script src="../public/js/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
+
+
+
+</body>
+
+</html>
