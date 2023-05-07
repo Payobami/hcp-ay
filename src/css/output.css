@@ -424,6 +424,13 @@ video {
   display: none;
 }
 
+a, button{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -518,6 +525,38 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.active-dash{
+  position: relative;
+}
+
+.active-dash::before{
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 0.25rem;
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 163 84 / var(--tw-bg-opacity));
+}
+
+.short-btn{
+  border-radius: 3px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  font-size: 13px;
+  --tw-shadow: -7px 7px 15px rgba(0,0,0,0.12);
+  --tw-shadow-colored: -7px 7px 15px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.short-btn:hover{
+  --tw-bg-opacity: 0.85;
+}
+
 .fixed{
   position: fixed;
 }
@@ -538,6 +577,10 @@ video {
   left: 0px;
 }
 
+.right-0{
+  right: 0px;
+}
+
 .right-8{
   right: 2rem;
 }
@@ -546,8 +589,8 @@ video {
   top: 0px;
 }
 
-.right-0{
-  right: 0px;
+.z-10{
+  z-index: 10;
 }
 
 .z-20{
@@ -560,14 +603,6 @@ video {
 
 .z-60{
   z-index: 60;
-}
-
-.-z-20{
-  z-index: -20;
-}
-
-.z-10{
-  z-index: 10;
 }
 
 .mb-1{
@@ -606,10 +641,6 @@ video {
   margin-top: auto;
 }
 
-.mb-auto{
-  margin-bottom: auto;
-}
-
 .block{
   display: block;
 }
@@ -634,12 +665,12 @@ video {
   height: 100%;
 }
 
-.min-h-screen{
-  min-height: 100vh;
-}
-
 .min-h-\[calc\(100vh-60px\)\]{
   min-height: calc(100vh - 60px);
+}
+
+.min-h-screen{
+  min-height: 100vh;
 }
 
 .w-7{
@@ -726,22 +757,6 @@ video {
   gap: 7px;
 }
 
-.place-self-end{
-  place-self: end;
-}
-
-.self-end{
-  align-self: flex-end;
-}
-
-.justify-self-end{
-  justify-self: end;
-}
-
-.rounded-\[3px\]{
-  border-radius: 3px;
-}
-
 .rounded-\[5px\]{
   border-radius: 5px;
 }
@@ -805,8 +820,8 @@ video {
   padding-bottom: 9px;
 }
 
-.pb-2{
-  padding-bottom: 0.5rem;
+.pb-5{
+  padding-bottom: 1.25rem;
 }
 
 .pl-10{
@@ -815,22 +830,6 @@ video {
 
 .pt-6{
   padding-top: 1.5rem;
-}
-
-.pt-9{
-  padding-top: 2.25rem;
-}
-
-.pb-6{
-  padding-bottom: 1.5rem;
-}
-
-.pb-4{
-  padding-bottom: 1rem;
-}
-
-.pb-5{
-  padding-bottom: 1.25rem;
 }
 
 .pt-8{
@@ -921,6 +920,11 @@ video {
   color: rgb(100 135 225 / var(--tw-text-opacity));
 }
 
+.text-\[\#7080DC\]{
+  --tw-text-opacity: 1;
+  color: rgb(112 128 220 / var(--tw-text-opacity));
+}
+
 .text-\[\#858585\]{
   --tw-text-opacity: 1;
   color: rgb(133 133 133 / var(--tw-text-opacity));
@@ -949,17 +953,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#7080DC\]{
-  --tw-text-opacity: 1;
-  color: rgb(112 128 220 / var(--tw-text-opacity));
-}
-
-.shadow-\[-7px_7px_15px_rgba\(0\2c 0\2c 0\2c 0\.12\)\]{
-  --tw-shadow: -7px 7px 15px rgba(0,0,0,0.12);
-  --tw-shadow-colored: -7px 7px 15px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-\[-7px_7px_15px_rgba\(0\2c 0\2c 0\2c 0\.13\)\]{
@@ -1012,46 +1005,6 @@ video {
 .before\:z-10::before{
   content: var(--tw-content);
   z-index: 10;
-}
-
-.before\:h-\[44\%\]::before{
-  content: var(--tw-content);
-  height: 44%;
-}
-
-.before\:h-\[60\%\]::before{
-  content: var(--tw-content);
-  height: 60%;
-}
-
-.before\:h-\[58\%\]::before{
-  content: var(--tw-content);
-  height: 58%;
-}
-
-.before\:h-\[59\%\]::before{
-  content: var(--tw-content);
-  height: 59%;
-}
-
-.before\:h-\[99\%\]::before{
-  content: var(--tw-content);
-  height: 99%;
-}
-
-.before\:h-\[100\%\]::before{
-  content: var(--tw-content);
-  height: 100%;
-}
-
-.before\:h-\[70\%\]::before{
-  content: var(--tw-content);
-  height: 70%;
-}
-
-.before\:h-\[65\%\]::before{
-  content: var(--tw-content);
-  height: 65%;
 }
 
 .before\:h-\[64\%\]::before{

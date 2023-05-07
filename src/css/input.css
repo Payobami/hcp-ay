@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    a, button {
+        @apply transition-all duration-200 ease-linear
+    }
+}
+
 @layer utilities {
     .gradient-1 {
         background: linear-gradient(96.6deg, #273658 23.09%, #182237 81.51%, #9BACD3 138.73%);
@@ -23,5 +29,15 @@
 
     .transparent-gradient {
         background: linear-gradient(98.94deg, #FFFFFF 1.5%, #F2F2F2 99.55%);
+    }
+}
+
+@layer components {
+    .active-dash {
+        @apply relative before:w-1 before:h-full before:absolute before:bg-[#20A354] before:left-0
+    }
+
+    .short-btn {
+        @apply bg-white rounded-[3px] shadow-[-7px_7px_15px_rgba(0,0,0,0.12)] px-3 py-1.5 text-[13px] hover:bg-opacity-[0.85]
     }
 }
