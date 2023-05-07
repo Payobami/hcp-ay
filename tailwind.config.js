@@ -9,15 +9,25 @@ module.exports = {
         'blue3': '#9BACD3',
         'dash-blue': '#F5FFF9',
         'mild-black': '#484747',
-        'brand-black': '#222222'
+        'brand-black': '#222222',
+        'black-2': '#4F4F4F',
+        'brand-green': '#20A354'
       },
       fontFamily: {
        poppins: [ "Poppins", "sans-serif" ]
+      },
+      spacing: {
+        7.5: '30px'
+      },
+      borderRadius: {
+        '5px': '5px',
+        10: '10px'
       },
       zIndex: {
         '60': '60'
       },
       fontSize: {
+        13: '13px',
         15: '15px'
       }
     },

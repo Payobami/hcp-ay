@@ -6,7 +6,7 @@
 
 @layer base {
     a, button {
-        @apply transition-all duration-200 ease-linear
+        @apply transition-all duration-200 ease-linear cursor-pointer
     }
 }
 
@@ -30,14 +30,43 @@
     .transparent-gradient {
         background: linear-gradient(98.94deg, #FFFFFF 1.5%, #F2F2F2 99.55%);
     }
+
+    .courses-table tbody tr {
+        @apply h-[58px] border-b border-b-[#E2E2E2]
+    }
+
+    .courses-table td {
+        @apply text-black-2 text-xs leading-[18px]
+    }
+
+    .courses-table .id {
+        @apply !text-center pr-3
+    }
+
+    .courses-table .table-headings {
+        @apply pt-7 pb-2
+    }
+
+
+    .courses-table .table-headings th {
+        @apply text-black-2 font-medium text-13 leading-5 text-left pb-3 pt-6
+    }
 }
 
 @layer components {
+    .center-content {
+        @apply flex items-center justify-center
+    }
+
     .active-dash {
-        @apply relative before:w-1 before:h-full before:absolute before:bg-[#20A354] before:left-0
+        @apply relative bg-[#F8F8F8] before:w-1 before:h-full before:absolute before:bg-[#20A354] before:left-0
     }
 
     .short-btn {
-        @apply bg-white rounded-[3px] shadow-[-7px_7px_15px_rgba(0,0,0,0.12)] px-3 py-1.5 text-[13px] hover:bg-opacity-[0.85]
+        @apply bg-white rounded-[3px] shadow-[-7px_7px_15px_rgba(0,0,0,0.12)] px-3 py-1.5 text-13 hover:bg-opacity-[0.85]
+    }
+
+    .btn {
+        @apply border bg-brand-green border-brand-green rounded-5px h-10 text-white leading-5 text-15
     }
 }
