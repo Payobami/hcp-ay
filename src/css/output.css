@@ -580,6 +580,24 @@ a, button{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.custom-select-1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* optional: add a background image for the custom arrow */
+}
+
+.custom-select-1::after {
+  content: "";
+  background-image: url('data:image/svg+xml;utf8,<svg width="12" height="12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.9188 8.17969H11.6888H6.07877C5.11877 8.17969 4.63877 9.33969 5.31877 10.0197L10.4988 15.1997C11.3288 16.0297 12.6788 16.0297 13.5088 15.1997L15.4788 13.2297L18.6888 10.0197C19.3588 9.33969 18.8788 8.17969 17.9188 8.17969Z"/></svg>');
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  background-position: right center;
+  fill: #20A354;
+  /* optional: add some padding to the right of the select */
+  padding-right: 20px;
+}
+
 .fixed{
   position: fixed;
 }
@@ -817,6 +835,14 @@ a, button{
   gap: 4rem;
 }
 
+.gap-2{
+  gap: 0.5rem;
+}
+
+.gap-2\.5{
+  gap: 0.625rem;
+}
+
 .gap-3{
   gap: 0.75rem;
 }
@@ -909,6 +935,10 @@ a, button{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.fill-brand-green{
+  fill: #20A354;
+}
+
 .px-14{
   padding-left: 3.5rem;
   padding-right: 3.5rem;
@@ -924,9 +954,9 @@ a, button{
   padding-right: 0.875rem;
 }
 
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .px-7{
@@ -957,11 +987,6 @@ a, button{
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-\[5px\]{
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 .py-\[9px\]{
@@ -1011,10 +1036,6 @@ a, button{
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pt-9{
-  padding-top: 2.25rem;
 }
 
 .font-poppins{
@@ -1115,11 +1136,6 @@ a, button{
   color: rgb(145 252 209 / var(--tw-text-opacity));
 }
 
-.text-\[\#979797\]{
-  --tw-text-opacity: 1;
-  color: rgb(151 151 151 / var(--tw-text-opacity));
-}
-
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1138,6 +1154,11 @@ a, button{
 .text-brand-green{
   --tw-text-opacity: 1;
   color: rgb(32 163 84 / var(--tw-text-opacity));
+}
+
+.text-grey-1{
+  --tw-text-opacity: 1;
+  color: rgb(151 151 151 / var(--tw-text-opacity));
 }
 
 .text-mild-black{
@@ -1262,6 +1283,35 @@ a, button{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(245 255 249 / var(--tw-bg-opacity));
+}
+
+.hover\:border-brand-green:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(32 163 84 / var(--tw-border-opacity));
+}
+
+.hover\:border-grey-1:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(151 151 151 / var(--tw-border-opacity));
+}
+
+.hover\:bg-brand-green:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 163 84 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-grey-1:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(151 151 151 / var(--tw-bg-opacity));
+}
+
+.hover\:fill-white:hover{
+  fill: #fff;
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .\[\&\>div\]\:relative>div{
