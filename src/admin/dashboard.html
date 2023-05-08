@@ -14,7 +14,7 @@
             <img class="cursor-pointer" src="../svg/menu.svg" />
         </div>
         <div class="flex gap-[7px] leading-5 items-center">
-            <div class="bg-white rounded-5px w-7 h-7 flex items-center justify-center">
+            <div class="bg-white rounded-5 w-7 h-7 flex items-center justify-center">
                 <p>M</p>
             </div>
             <a class="text-white text-sm font-medium flex items-center gap-1.5">
@@ -75,8 +75,8 @@
         </aside>
 
         <!-- In the calculation calc(100vh - 60px), 60px is the height of the fixed nav. This is done to even the height of the main screen to prevent unnecessary vertical overflows -->
-        <section class="ml-[260px] pt-8 px-7 flex-1 relative w-full min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
-            <div class="flex items-center flex-wrap gap-[18px] relative z-20">
+        <section class="ml-[260px] [&>div]:relative [&>div]:z-20 pt-8 px-7 flex-1 relative w-full min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
+            <div class="flex items-center flex-wrap gap-[18px]">
                 <div class="green-gradient rounded-md h-[150px] px-3.5 py-3 leading-5 w-[333px] flex flex-col justify-end items-start relative">
                     <h3 class="text-white text-xl font-semibold">Users</h3>
                     <p class="text-[#91FCD1] text-15 mb-1.5">You have 0 members.</p>

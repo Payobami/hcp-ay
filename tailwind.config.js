@@ -21,7 +21,7 @@ module.exports = {
         7.5: '30px'
       },
       borderRadius: {
-        '5px': '5px',
+        5: '5px',
         10: '10px'
       },
       zIndex: {

@@ -8,9 +8,21 @@
     a, button {
         @apply transition-all duration-200 ease-linear cursor-pointer
     }
+
+    input {
+        @apply !outline-none
+    }
 }
 
 @layer utilities {
+    .outline-hover {
+        @apply hover:bg-brand-green hover:text-white
+    }
+
+    .filled-hover {
+        @apply hover:bg-white hover:text-brand-green
+    }
+
     .gradient-1 {
         background: linear-gradient(96.6deg, #273658 23.09%, #182237 81.51%, #9BACD3 138.73%);
     }
@@ -29,6 +41,10 @@
 
     .transparent-gradient {
         background: linear-gradient(98.94deg, #FFFFFF 1.5%, #F2F2F2 99.55%);
+    }
+
+    .greyish-gradient {
+        background: linear-gradient(180deg, #D7D7D7 25.21%, rgba(215, 215, 215, 0.2) 66.13%, rgba(164, 164, 164, 0) 100%);
     }
 
     .courses-table tbody tr {
@@ -67,7 +83,7 @@
     }
 
     .btn {
-        @apply border bg-brand-green border-brand-green rounded-5px h-10 text-white leading-5 text-15
+        @apply border bg-brand-green border-brand-green rounded-5 h-10 text-white leading-5 text-15
     }
 
     .custom-select-1 {
