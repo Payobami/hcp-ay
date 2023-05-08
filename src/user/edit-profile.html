@@ -38,7 +38,7 @@
                     <img src="../svg/grid.svg" />
                     Dashboard
                 </a>
-                <a class="flex items-center gap-3.5 py-[9px] pl-10">
+                <a class="flex items-center gap-3.5 py-[9px] pl-10" onclick="viewModal(true)">
                     <img src="../svg/course.svg" />
                     Courses
                 </a>
@@ -60,11 +60,16 @@
         <!-- In the calculation calc(100vh - 60px), 60px is the height of the fixed nav. This is done to even the height of the main screen to prevent unnecessary vertical overflows -->
         <section class="ml-[260px] [&>div]:relative [&>div]:z-20 pt-8 px-7 flex-1 relative w-full min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
             <div>
-                <a class="flex items-center gap-3 uppercase text-[#656972] text-xs leading-5 mb-[18px] group">
-                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.5735 12.4849C14.7774 12.2731 15.1168 12.2731 15.3278 12.4849C15.5317 12.6896 15.5317 13.0303 15.3278 13.2345L11.5031 17.0742H24.1243C24.4185 17.0747 24.6523 17.3094 24.6523 17.6048C24.6523 17.9001 24.4185 18.1425 24.1243 18.1425H11.5031L15.3278 21.9751C15.5317 22.1869 15.5317 22.5281 15.3278 22.7323C15.1168 22.9442 14.777 22.9442 14.5735 22.7323L9.8433 17.9836C9.63226 17.7789 9.63226 17.4383 9.8433 17.234L14.5735 12.4849Z" fill="#656972"/>
-                        <circle class="group-hover:fill-[#656972]" cx="17.6086" cy="17.6086" r="16.7282" stroke="#656972" stroke-width="1.76086"/>
+                <a class="w-fit flex items-center gap-3 uppercase text-[#656972] text-xs leading-5 mb-[18px] group">
+                    <svg class="group-hover:scale-90 ease-in-out duration-300" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fill-[#656972]" d="M14.5735 12.4849C14.7774 12.2731 15.1168 12.2731 15.3278 12.4849C15.5317 12.6896 15.5317 13.0303 15.3278 13.2345L11.5031 17.0742H24.1243C24.4185 17.0747 24.6523 17.3094 24.6523 17.6048C24.6523 17.9001 24.4185 18.1425 24.1243 18.1425H11.5031L15.3278 21.9751C15.5317 22.1869 15.5317 22.5281 15.3278 22.7323C15.1168 22.9442 14.777 22.9442 14.5735 22.7323L9.8433 17.9836C9.63226 17.7789 9.63226 17.4383 9.8433 17.234L14.5735 12.4849Z"/>
+                        <circle class="" cx="17.6086" cy="17.6086" r="16.7282" stroke="#656972" stroke-width="1.76086"/>
                     </svg>
+                    <!-- <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fill-[#656972]" d="M12 22.75C6.07 22.75 1.25 17.93 1.25 12C1.25 6.07 6.07 1.25 12 1.25C17.93 1.25 22.75 6.07 22.75 12C22.75 17.93 17.93 22.75 12 22.75ZM12 2.75C6.9 2.75 2.75 6.9 2.75 12C2.75 17.1 6.9 21.25 12 21.25C17.1 21.25 21.25 17.1 21.25 12C21.25 6.9 17.1 2.75 12 2.75Z"/>
+                        <path class="fill-[#656972]" d="M15.5 12.75H9.5C9.09 12.75 8.75 12.41 8.75 12C8.75 11.59 9.09 11.25 9.5 11.25H15.5C15.91 11.25 16.25 11.59 16.25 12C16.25 12.41 15.91 12.75 15.5 12.75Z"/>
+                        <path class="fill-[#656972]" d="M11.4995 15.7499C11.3095 15.7499 11.1195 15.6799 10.9695 15.5299L7.96945 12.5299C7.67945 12.2399 7.67945 11.7599 7.96945 11.4699L10.9695 8.46994C11.2595 8.17994 11.7395 8.17994 12.0295 8.46994C12.3195 8.75994 12.3195 9.23994 12.0295 9.52994L9.55945 11.9999L12.0295 14.4699C12.3195 14.7599 12.3195 15.2399 12.0295 15.5299C11.8795 15.6799 11.6895 15.7499 11.4995 15.7499Z" />
+                    </svg> -->
                     Back
                 </a>
                 <div class="flex gap-[18px] mb-14">
@@ -140,5 +145,26 @@
             </div>
         </section>
     </main>
+    <div id="review-modal" class="hide-modal fixed top-0 bottom-0 flex items-center justify-center w-full h-full bg-black bg-opacity-70 z-60 transition-all ease-linear duration-[400ms]" onclick="viewModal(false)">
+        <div class="bg-white px-10 pt-10 pb-9 max-w-[600px] flex flex-col items-center border border-[#E2E2E2] rounded-10 shadow-[-5px_5px_25px_rgba(0,0,0,0.06)] delay-300 ease-linear duration-[400ms]">
+            <img class="w-14 h-14 mb-1.5" src="../img/performance-1.png" />
+            <h1 class="text-brand-green font-black leading-[66px] tracking-tight text-[44px] mb-3">Review Course</h1>
+            <div class="flex gap-3 items-center mb-8">
+                <img class="object-scale-down w-14 h-14" src="../img/star-filled.png" />
+                <img class="object-scale-down mb-2 w-fit h-fit" src="../img/star.png" />
+                <img class="object-scale-down mb-2 w-fit h-fit" src="../img/star.png" />
+                <img class="object-scale-down mb-2 w-fit h-fit" src="../img/star.png" />
+                <img class="object-scale-down mb-2 w-fit h-fit" src="../img/star.png" />
+            </div>
+            <h3 class="text-black-2 font-medium text-[21px] leading-8 tracking-tight mb-7">Course Completed</h3>
+            <form>
+                <textarea class="w-[483px] h-[86px] mb-8 px-3 py-1.5 text-[#57584F] text-opacity-100 placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 focus:border-opacity-80 text-sm leading-7 tracking-tight rounded" placeholder="Additional Feedback would be appreciated (Optional)"></textarea>
+                <button class="block mx-auto uppercase border border-brand-green bg-brand-green rounded-5 px-16 py-4 text-white filled-hover">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
 </body>
+<script src="../js/hcp.js"></script>
 </html>
