@@ -295,6 +295,16 @@ min-height
   border: 1.5px solid rgba(0,0,0,0.06);
   border-radius: 15px !important;
 }
+.loginBgx {
+  background: -webkit-linear-gradient(320.42deg, rgba(39,54,88,0.9) 8.59%, rgba(24,34,55,0.4) 45.36%, rgba(54,74,121,0.9) 81.31%), url("../images/studentLap.svg") no-repeat;
+  background: -moz-linear-gradient(320.42deg, rgba(39,54,88,0.9) 8.59%, rgba(24,34,55,0.4) 45.36%, rgba(54,74,121,0.9) 81.31%), url("../images/studentLap.svg") no-repeat;
+  background: -o-linear-gradient(320.42deg, rgba(39,54,88,0.9) 8.59%, rgba(24,34,55,0.4) 45.36%, rgba(54,74,121,0.9) 81.31%), url("../images/studentLap.svg") no-repeat;
+  background: -ms-linear-gradient(320.42deg, rgba(39,54,88,0.9) 8.59%, rgba(24,34,55,0.4) 45.36%, rgba(54,74,121,0.9) 81.31%), url("../images/studentLap.svg") no-repeat;
+  background: linear-gradient(129.58deg, rgba(39,54,88,0.9) 8.59%, rgba(24,34,55,0.4) 45.36%, rgba(54,74,121,0.9) 81.31%), url("../images/studentLap.svg") no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
 @media only screen and (max-width: 650px) {
   .row1 {
     background: #222751 !important;
