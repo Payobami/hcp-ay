@@ -281,7 +281,8 @@
 
                 <div class="grid grid-cols-12 md:gap-10">
                     <div class="md:col-span-3 col-span-12">
-                        <h3 class="workSanBold mb-3 md:text-3xl text-xl primaryColor">24 results for “Data analysis”</h3>
+                        <h3 class="workSanBold mb-3 md:text-3xl text-xl primaryColor">24 results for “Data analysis”
+                        </h3>
                     </div>
 
                     <div class="md:col-span-6 col-span-12">
@@ -290,7 +291,7 @@
 
                             <input class="px-2 py-3 w-full" placeholder="Search for courses you want..." />
                             <div>
-                                <button
+                                <button onclick="window.location ='./search-result.html'"
                                     class="py-3 px-3 rounded-lg md:w-40 workSan  bg-blue-900 text-white">Search</button>
 
                             </div>
@@ -303,37 +304,37 @@
 
                 <div class="md:col-span-3 col-span-12 md:px-0 px-10 mb-10">
                     <div class="rounded-lg shadow-lg">
+                        <a href="./course-view.html" class="">
+                            <div class="rounded-lg px-5 pt-5"
+                                style="background: url('../public/images/courses/c1.png'); height: 160px; background-size: cover">
+                                <div class="gap-20">
 
-                        <div class="rounded-lg px-5 pt-5"
-                            style="background: url('../public/images/courses/c1.png'); height: 160px; background-size: cover">
-                            <div class="gap-20">
-
-                                <a class="pl-2 py-1 rounded-full bg-white text-black float-right"
-                                    style="width: 30px; height: 30px;">
-                                    <i class="fa fa-shopping-cart text-black p-0 m-0"></i>
-                                </a>
+                                    <button class="pl- py-1 text-center rounded-full bg-white text-black float-right"
+                                        style="width: 30px; height: 30px;">
+                                        <i class="fa fa-shopping-cart text-black p-0 m-0"></i>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="shadow-md m-h-200 px-5" style="min-height: 180px">
-                            <div class="mt-12">
-                                <a href="#">
-                                    <h6 class="mulish">Web Development</h6>
-                                    <h4 class="mulishBold">Becoming a Full-stack Developer</h4>
-                                </a>
+                            <div class="shadow-md m-h-200 px-5" style="min-height: 180px">
+                                <div class="mt-12">
+                                    <a href="#">
+                                        <h6 class="mulish">Web Development</h6>
+                                        <h4 class="mulishBold">Becoming a Full-stack Developer</h4>
+                                    </a>
 
-                                <div class="pt-3 mt-10">
-                                    <div class="flex flex-row gap-20">
-                                        <a class="px-3 bg-white py-1 rounded-md workSanMedium">
-                                            Free
-                                        </a>
-                                        <a class="px-3 bg-blue-900 py-2 text-white rounded-md text-xs">Enroll Now<i
-                                                class=""></i></a>
+                                    <div class="pt-3 mt-10">
+                                        <div class="flex flex-row gap-20">
+                                            <a class="px-3 bg-white py-1 rounded-md workSanMedium">
+                                                Free
+                                            </a>
+                                            <a href="./auth/login.html" class="px-3 bg-blue-900 py-2 text-white rounded-md text-xs">Enroll Now<i
+                                                    class=""></i></a>
 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
 
@@ -610,13 +611,15 @@
 
             <div class="flex flex-row gap-4">
                 <a href="#"
-                    class="px-3 py-2 hover:no-underline hover:bg-blue-800 hover:text-white border rounded-md borderColor workSanMedium text-gray-600">Data analysis</a>
+                    class="px-3 py-2 hover:no-underline hover:bg-blue-800 hover:text-white border rounded-md borderColor workSanMedium text-gray-600">Data
+                    analysis</a>
                 <a href="#"
                     class="px-3 py-2 hover:no-underline hover:bg-blue-800 hover:text-white border rounded-md borderColor workSanMedium text-gray-600">SQL</a>
                 <a href="#"
                     class="px-3 py-2 hover:no-underline hover:bg-blue-800 hover:text-white border rounded-md borderColor workSanMedium text-gray-600">Python</a>
                 <a href="#"
-                    class="px-3 py-2 hover:no-underline hover:bg-blue-800 hover:text-white border rounded-md borderColor workSanMedium text-gray-600">Data Manipulation</a>
+                    class="px-3 py-2 hover:no-underline hover:bg-blue-800 hover:text-white border rounded-md borderColor workSanMedium text-gray-600">Data
+                    Manipulation</a>
             </div>
 
 
@@ -759,7 +762,8 @@
 
         <div class="mx-auto mt-5 w-full my-28" style="margin-top: 60px;">
             <div class="mx-auto text-center">
-                <a href="#" class="py-3 px-3 border rounded-md text-white" style="background:#273658">Get Started</a>
+                <a href="./auth/login.html" class="py-3 px-3 border rounded-md text-white"
+                    style="background:#273658">Get Started</a>
             </div>
         </div>
 
