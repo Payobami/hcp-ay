@@ -40,6 +40,34 @@
     transition-delay: 0s !important;
 }
 
+.hide-sidebar > #sidebar {
+    width: 0 !important;
+}
+
+.hide-sidebar > #main-content {
+    margin-left: 0 !important;
+}
+
+.hide-sidebar > #sidebar > * {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out opacity 0.3s;
+}
+
+#sidebar {
+    transition: 0.6s ease-in-out width;
+}
+
+#main-content {
+    transition: 0.6s ease-in-out margin;
+}
+
+#sidebar > * {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s ease-in-out opacity 0.3s;
+}
+
 @layer base {
     a, button {
         @apply transition-all duration-200 ease-linear cursor-pointer
@@ -51,6 +79,10 @@
 }
 
 @layer utilities {
+    .company-color-gradient {
+        background: conic-gradient(from 180deg at 50% 50%, #CC15A4 0deg, #CC2015 51.71deg, #CC4115 111.38deg, #CC9915 155.14deg, #C8CC15 204.86deg, #9115CC 254.59deg, #15CC32 298.34deg, #CC1520 344.09deg, #CC15A4 360deg);
+    }
+
     .outline-hover {
         @apply hover:bg-brand-green hover:text-white
     }

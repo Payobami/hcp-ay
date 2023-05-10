@@ -30,6 +30,16 @@ module.exports = {
       fontSize: {
         13: '13px',
         15: '15px'
+      },
+      screens: {
+        'xs': '330px',
+        'xsm': '576px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '992px',
+        'xl': '1200px',
+        '2xl': '1400px',
+        '3xl': '1536px'
       }
     },
   },

@@ -642,6 +642,10 @@ input, textarea, button{
   margin-bottom: 0px;
 }
 
+.mb-0\.5{
+  margin-bottom: 0.125rem;
+}
+
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -678,6 +682,10 @@ input, textarea, button{
   margin-bottom: 5rem;
 }
 
+.mb-28{
+  margin-bottom: 7rem;
+}
+
 .mb-3{
   margin-bottom: 0.75rem;
 }
@@ -702,8 +710,16 @@ input, textarea, button{
   margin-bottom: 1.75rem;
 }
 
+.mb-7\.5{
+  margin-bottom: 30px;
+}
+
 .mb-8{
   margin-bottom: 2rem;
+}
+
+.mb-\[11px\]{
+  margin-bottom: 11px;
 }
 
 .mb-\[18px\]{
@@ -718,8 +734,20 @@ input, textarea, button{
   margin-bottom: 26px;
 }
 
+.mb-\[50px\]{
+  margin-bottom: 50px;
+}
+
 .mb-\[53px\]{
   margin-bottom: 53px;
+}
+
+.ml-3{
+  margin-left: 0.75rem;
+}
+
+.ml-8{
+  margin-left: 2rem;
 }
 
 .ml-\[260px\]{
@@ -738,32 +766,12 @@ input, textarea, button{
   margin-top: auto;
 }
 
-.mb-0\.5{
-  margin-bottom: 0.125rem;
-}
-
-.ml-3{
-  margin-left: 0.75rem;
-}
-
-.ml-6{
-  margin-left: 1.5rem;
-}
-
-.ml-8{
-  margin-left: 2rem;
-}
-
-.ml-9{
-  margin-left: 2.25rem;
-}
-
-.mb-\[11px\]{
-  margin-bottom: 11px;
-}
-
 .block{
   display: block;
+}
+
+.inline{
+  display: inline;
 }
 
 .flex{
@@ -776,6 +784,10 @@ input, textarea, button{
 
 .grid{
   display: grid;
+}
+
+.\!h-\[180px\]{
+  height: 180px !important;
 }
 
 .h-10{
@@ -802,6 +814,10 @@ input, textarea, button{
   height: 150px;
 }
 
+.h-\[38px\]{
+  height: 38px;
+}
+
 .h-\[60px\]{
   height: 60px;
 }
@@ -821,10 +837,6 @@ input, textarea, button{
 
 .h-full{
   height: 100%;
-}
-
-.h-8{
-  height: 2rem;
 }
 
 .min-h-\[calc\(100vh-60px\)\]{
@@ -851,8 +863,20 @@ input, textarea, button{
   width: 100px;
 }
 
+.w-\[120px\]{
+  width: 120px;
+}
+
 .w-\[14\%\]{
   width: 14%;
+}
+
+.w-\[150px\]{
+  width: 150px;
+}
+
+.w-\[170px\]{
+  width: 170px;
 }
 
 .w-\[18\%\]{
@@ -879,12 +903,20 @@ input, textarea, button{
   width: 333px;
 }
 
+.w-\[425px\]{
+  width: 425px;
+}
+
 .w-\[47\%\]{
   width: 47%;
 }
 
 .w-\[483px\]{
   width: 483px;
+}
+
+.w-\[56px\]{
+  width: 56px;
 }
 
 .w-\[70px\]{
@@ -902,14 +934,6 @@ input, textarea, button{
 
 .w-full{
   width: 100%;
-}
-
-.w-\[120px\]{
-  width: 120px;
-}
-
-.w-\[130px\]{
-  width: 130px;
 }
 
 .max-w-\[295px\]{
@@ -960,6 +984,14 @@ input, textarea, button{
   justify-content: space-between;
 }
 
+.gap-0{
+  gap: 0px;
+}
+
+.gap-0\.5{
+  gap: 0.125rem;
+}
+
 .gap-1{
   gap: 0.25rem;
 }
@@ -980,6 +1012,10 @@ input, textarea, button{
   gap: 0.625rem;
 }
 
+.gap-24{
+  gap: 6rem;
+}
+
 .gap-3{
   gap: 0.75rem;
 }
@@ -990,6 +1026,10 @@ input, textarea, button{
 
 .gap-6{
   gap: 1.5rem;
+}
+
+.gap-7{
+  gap: 1.75rem;
 }
 
 .gap-9{
@@ -1006,14 +1046,6 @@ input, textarea, button{
 
 .gap-\[7px\]{
   gap: 7px;
-}
-
-.gap-10{
-  gap: 2.5rem;
-}
-
-.gap-7{
-  gap: 1.75rem;
 }
 
 .gap-x-8{
@@ -1093,12 +1125,12 @@ input, textarea, button{
   border-right-width: 1px;
 }
 
-.border-t{
-  border-top-width: 1px;
-}
-
 .border-r-2{
   border-right-width: 2px;
+}
+
+.border-t{
+  border-top-width: 1px;
 }
 
 .border-\[\#828282\]{
@@ -1126,6 +1158,11 @@ input, textarea, button{
   border-color: rgb(196 196 196 / var(--tw-border-opacity));
 }
 
+.border-\[\#D5D5D5\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(213 213 213 / var(--tw-border-opacity));
+}
+
 .border-\[\#D8D8D8\]{
   --tw-border-opacity: 1;
   border-color: rgb(216 216 216 / var(--tw-border-opacity));
@@ -1141,11 +1178,6 @@ input, textarea, button{
   border-color: rgb(32 163 84 / var(--tw-border-opacity));
 }
 
-.border-\[\#D5D5D5\]{
-  --tw-border-opacity: 1;
-  border-color: rgb(213 213 213 / var(--tw-border-opacity));
-}
-
 .border-r-\[\#A1A1A1\]{
   --tw-border-opacity: 1;
   border-right-color: rgb(161 161 161 / var(--tw-border-opacity));
@@ -1159,8 +1191,34 @@ input, textarea, button{
   --tw-border-opacity: 39%;
 }
 
-.border-opacity-40{
-  --tw-border-opacity: 0.4;
+.bg-\[\#157FCC\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 127 204 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#335153\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 81 83 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#37B02C\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 176 44 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#6CB4B8\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(108 180 184 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#DA7015\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 112 21 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#EC407A\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 64 122 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#F3F3F3\]{
@@ -1280,6 +1338,11 @@ input, textarea, button{
   padding-bottom: 0.375rem;
 }
 
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1293,6 +1356,11 @@ input, textarea, button{
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .py-8{
@@ -1313,16 +1381,6 @@ input, textarea, button{
 .py-\[9px\]{
   padding-top: 9px;
   padding-bottom: 9px;
-}
-
-.py-7{
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-}
-
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .pb-5{
@@ -1385,16 +1443,16 @@ input, textarea, button{
   padding-top: 69px;
 }
 
-.pt-7{
-  padding-top: 1.75rem;
-}
-
 .text-left{
   text-align: left;
 }
 
 .text-center{
   text-align: center;
+}
+
+.\!font-poppins{
+  font-family: Poppins, sans-serif !important;
 }
 
 .font-poppins{
@@ -1412,6 +1470,14 @@ input, textarea, button{
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-\[11px\]{
+  font-size: 11px;
+}
+
+.text-\[13px\]{
+  font-size: 13px;
 }
 
 .text-\[15px\]{
@@ -1455,14 +1521,6 @@ input, textarea, button{
   line-height: 1rem;
 }
 
-.text-\[11px\]{
-  font-size: 11px;
-}
-
-.text-\[13px\]{
-  font-size: 13px;
-}
-
 .font-black{
   font-weight: 900;
 }
@@ -1491,6 +1549,14 @@ input, textarea, button{
   text-transform: uppercase;
 }
 
+.leading-3{
+  line-height: .75rem;
+}
+
+.leading-4{
+  line-height: 1rem;
+}
+
 .leading-5{
   line-height: 1.25rem;
 }
@@ -1511,20 +1577,16 @@ input, textarea, button{
   line-height: 18px;
 }
 
+.leading-\[22px\]{
+  line-height: 22px;
+}
+
 .leading-\[38px\]{
   line-height: 38px;
 }
 
 .leading-\[66px\]{
   line-height: 66px;
-}
-
-.leading-4{
-  line-height: 1rem;
-}
-
-.leading-3{
-  line-height: .75rem;
 }
 
 .tracking-tight{
@@ -1540,9 +1602,19 @@ input, textarea, button{
   color: rgb(19 124 83 / var(--tw-text-opacity));
 }
 
+.text-\[\#464646\]{
+  --tw-text-opacity: 1;
+  color: rgb(70 70 70 / var(--tw-text-opacity));
+}
+
 .text-\[\#57584F\]{
   --tw-text-opacity: 1;
   color: rgb(87 88 79 / var(--tw-text-opacity));
+}
+
+.text-\[\#5E5E5E\]{
+  --tw-text-opacity: 1;
+  color: rgb(94 94 94 / var(--tw-text-opacity));
 }
 
 .text-\[\#6487E1\]{
@@ -1568,6 +1640,21 @@ input, textarea, button{
 .text-\[\#91FCD1\]{
   --tw-text-opacity: 1;
   color: rgb(145 252 209 / var(--tw-text-opacity));
+}
+
+.text-\[\#959595\]{
+  --tw-text-opacity: 1;
+  color: rgb(149 149 149 / var(--tw-text-opacity));
+}
+
+.text-\[\#979797\]{
+  --tw-text-opacity: 1;
+  color: rgb(151 151 151 / var(--tw-text-opacity));
+}
+
+.text-\[\#9E9E9E\]{
+  --tw-text-opacity: 1;
+  color: rgb(158 158 158 / var(--tw-text-opacity));
 }
 
 .text-black{
@@ -1608,16 +1695,6 @@ input, textarea, button{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#979797\]{
-  --tw-text-opacity: 1;
-  color: rgb(151 151 151 / var(--tw-text-opacity));
-}
-
-.text-\[\#464646\]{
-  --tw-text-opacity: 1;
-  color: rgb(70 70 70 / var(--tw-text-opacity));
 }
 
 .text-opacity-100{
@@ -1700,6 +1777,10 @@ input, textarea, button{
 
 .ease-linear{
   transition-timing-function: linear;
+}
+
+.company-color-gradient {
+  background: conic-gradient(from 180deg at 50% 50%, #CC15A4 0deg, #CC2015 51.71deg, #CC4115 111.38deg, #CC9915 155.14deg, #C8CC15 204.86deg, #9115CC 254.59deg, #15CC32 298.34deg, #CC1520 344.09deg, #CC15A4 360deg);
 }
 
 .outline-hover:hover{
@@ -1812,6 +1893,34 @@ input, textarea, button{
   transition-delay: 0s !important;
 }
 
+.hide-sidebar > #sidebar {
+  width: 0 !important;
+}
+
+.hide-sidebar > #main-content {
+  margin-left: 0 !important;
+}
+
+.hide-sidebar > #sidebar > * {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out opacity 0.3s;
+}
+
+#sidebar {
+  transition: 0.6s ease-in-out width;
+}
+
+#main-content {
+  transition: 0.6s ease-in-out margin;
+}
+
+#sidebar > * {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s ease-in-out opacity 0.3s;
+}
+
 .placeholder\:text-opacity-\[65\%\]::-moz-placeholder{
   --tw-text-opacity: 65%;
 }
@@ -1913,12 +2022,33 @@ input, textarea, button{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@media (min-width: 410px){
+  .min-\[410px\]\:hidden{
+    display: none;
+  }
+}
+
+@media (min-width: 992px){
+  .lg\:gap-16{
+    gap: 4rem;
+  }
+
+  .lg\:px-14{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+}
+
 .\[\&\>div\]\:relative>div{
   position: relative;
 }
 
 .\[\&\>div\]\:z-20>div{
   z-index: 20;
+}
+
+.\[\&\>p\]\:\!leading-6>p{
+  line-height: 1.5rem !important;
 }
 
 .odd\:\[\&\>tr\]\:bg-\[\#F8F8F8\]>tr:nth-child(odd){
