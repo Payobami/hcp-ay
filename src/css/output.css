@@ -843,6 +843,10 @@ input, textarea, button{
   height: 100%;
 }
 
+.h-\[170px\]{
+  height: 170px;
+}
+
 .min-h-\[calc\(100vh-60px\)\]{
   min-height: calc(100vh - 60px);
 }
@@ -938,6 +942,10 @@ input, textarea, button{
 
 .w-full{
   width: 100%;
+}
+
+.min-w-\[333px\]{
+  min-width: 333px;
 }
 
 .max-w-\[295px\]{
@@ -2024,6 +2032,12 @@ input, textarea, button{
   --tw-scale-x: .9;
   --tw-scale-y: .9;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (min-width: 365px){
+  .min-\[365px\]\:min-w-\[333px\]{
+    min-width: 333px;
+  }
 }
 
 @media (min-width: 410px){
