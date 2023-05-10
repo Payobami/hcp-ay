@@ -786,6 +786,10 @@ input, textarea, button{
   display: grid;
 }
 
+.hidden{
+  display: none;
+}
+
 .\!h-\[180px\]{
   height: 180px !important;
 }
@@ -2023,8 +2027,19 @@ input, textarea, button{
 }
 
 @media (min-width: 410px){
+  .min-\[410px\]\:inline{
+    display: inline;
+  }
+
   .min-\[410px\]\:hidden{
     display: none;
+  }
+}
+
+@media (min-width: 576px){
+  .xsm\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 

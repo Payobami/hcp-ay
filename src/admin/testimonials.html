@@ -8,8 +8,8 @@
     <link href="../css/output.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="font-poppins text-base font-normal relative">
-    <nav class="gradient-1 flex justify-between items-center px-14 py-1.5 fixed top-0 z-60 w-full h-[60px]">
-        <div class="flex gap-16">
+    <nav class="gradient-1 flex justify-between items-center px-6 xsm:px-10 lg:px-14 py-1.5 fixed top-0 z-60 w-full h-[60px]">
+        <div class="flex gap-3 items-center lg:gap-16">
             <a><img src="../svg/logo.svg" /></a>
             <img class="cursor-pointer" src="../svg/menu.svg" onclick="showSidebar(true)" />
         </div>
@@ -18,7 +18,9 @@
                 <p>M</p>
             </div>
             <a class="text-white text-sm font-medium flex items-center gap-1.5">
-                Admin@hcp.com
+                <span class="hidden min-[410px]:inline">
+                    Admin@hcp.com
+                </span>
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
