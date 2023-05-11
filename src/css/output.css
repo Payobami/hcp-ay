@@ -2155,6 +2155,17 @@ input, textarea, button{
   }
 }
 
+@media (min-width: 640px){
+  .sm\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sm\:justify-center{
+    justify-content: center;
+  }
+}
+
 @media (min-width: 768px){
   .md\:text-center{
     text-align: center;
@@ -2207,8 +2218,17 @@ input, textarea, button{
 }
 
 @media (min-width: 1320px){
+  .min-\[1320px\]\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .min-\[1320px\]\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .min-\[1320px\]\:justify-start{
+    justify-content: flex-start;
   }
 
   .min-\[1320px\]\:text-left{
