@@ -28,8 +28,8 @@
         </div>
     </nav>
 
-    <main id="main-el" class="flex mt-[60px]">
-        <aside class="sidebar z-50 bg-white h-full w-[260px] min-h-screen py-8 shadow-[5px_-5px_7px_rgba(0,0,0,0.08)] fixed left-0" id="sidebar">
+    <main id="main-el" class="flex mt-[60px] hide-sidebar">
+        <aside id="sidebar" class="sidebar z-50 bg-white h-full w-[260px] min-h-screen py-8 shadow-[5px_-5px_7px_rgba(0,0,0,0.08)] fixed left-0">
             <div class="mb-[26px] px-7">
                 <p class="text-mild-black text-lg mb-1 leading-7">Hi, Adeyemi Inc.</p>
                 <p class="text-[15px] font-light leading-5 text-grey-1">Admin@hcp.com</p>
@@ -77,13 +77,13 @@
         </aside>
 
         <!-- In the calculation calc(100vh - 60px), 60px is the height of the fixed nav. This is done to even the height of the main screen to prevent unnecessary vertical overflows -->
-        <section id="main-content" class="ml-[260px] [&>div]:relative [&>div]:z-20 pt-9 px-7 flex-1 relative w-full min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
+        <section id="main-content" class="ml-[260px] [&>div]:relative [&>div]:z-20 pt-9 px-3.5 xsm:px-7 flex-1 relative w-full min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
             <div>
                 <h4 class="uppercase text-brand-green leading-7 text-lg mb-4">Settings</h4>
                 <div class="bg-white border border-[#E2E2E2] shadow-[-5px_5px_25px_rgba(0,0,0,0.06)] rounded-10 py-[22px]">
                     <h2 class="mb-2.5 text-black-2 tracking-wider leading-[38px] text-2xl font-semibold px-9">Account Settings</h2>
-                    <div class="flex flex-wrap gap-9 border-t border-[#A1A1A1] border-opacity-[39%] pt-10 px-9 mb-40">
-                        <button class="w-full flex-1 min-w-[295px] text-left flex gap-6 items-center px-7 py-4 bg-[#F3F3F3] rounded-5 border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)] hover:bg-opacity-50">
+                    <div class="flex max-[525px]:flex-col flex-wrap gap-9 border-t border-[#A1A1A1] border-opacity-[39%] pt-10 px-3.5 xsm:px-9 mb-40">
+                        <button class="w-full flex-1 xsm:min-w-[295px] xsm:max-w-[295px] text-left flex flex-wrap xsm:flex-nowrap gap-6 items-center px-4 xsm:px-7 py-4 bg-[#F3F3F3] rounded-5 border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)] hover:bg-opacity-50">
                             <img class="" src="../svg/padlock.svg" />
                             <div class="tracking-wider leading-5 text-black-2">
                                 <h4 class="font-medium text-sm leading-5 mb-1">Manage Password</h4>
@@ -91,7 +91,7 @@
                             </div>
                         </button>
 
-                        <button class="w-full flex-1 min-w-[295px] text-left flex gap-6 items-center px-7 py-4 bg-[#F3F3F3] rounded-5 border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)] hover:bg-opacity-50">
+                        <button class="w-full flex-1 xsm:min-w-[295px] xsm:max-w-[295px] text-left flex flex-wrap xsm:flex-nowrap gap-6 items-center px-4 xsm:px-7 py-4 bg-[#F3F3F3] rounded-5 border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)] hover:bg-opacity-50">
                             <img class="" src="../svg/paint.svg" />
                             <div class="tracking-wider leading-5 text-black-2">
                                 <h4 class="font-medium text-sm leading-5 mb-1">Customize Dashboard</h4>

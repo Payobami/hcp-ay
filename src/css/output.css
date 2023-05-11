@@ -932,12 +932,20 @@ input, textarea, button{
   width: 100%;
 }
 
+.w-\[295px\]{
+  width: 295px;
+}
+
 .min-w-\[1025px\]{
   min-width: 1025px;
 }
 
 .min-w-\[295px\]{
   min-width: 295px;
+}
+
+.min-w-\[250px\]{
+  min-width: 250px;
 }
 
 .max-w-\[295px\]{
@@ -950,6 +958,10 @@ input, textarea, button{
 
 .max-w-full{
   max-width: 100%;
+}
+
+.max-w-\[300px\]{
+  max-width: 300px;
 }
 
 .flex-1{
@@ -2035,6 +2047,12 @@ input, textarea, button{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@media (max-width: 525px){
+  .max-\[525px\]\:flex-col{
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 400px){
   .max-\[400px\]\:flex-col{
     flex-direction: column;
@@ -2072,9 +2090,23 @@ input, textarea, button{
   }
 }
 
+@media (min-width: 525px){
+  .min-\[525px\]\:min-w-\[295px\]{
+    min-width: 295px;
+  }
+
+  .min-\[525px\]\:max-w-\[295px\]{
+    max-width: 295px;
+  }
+}
+
 @media (min-width: 576px){
   .xsm\:ml-8{
     margin-left: 2rem;
+  }
+
+  .xsm\:min-w-\[295px\]{
+    min-width: 295px;
   }
 
   .xsm\:max-w-\[600px\]{
@@ -2087,6 +2119,10 @@ input, textarea, button{
 
   .xsm\:max-w-\[620px\]{
     max-width: 620px;
+  }
+
+  .xsm\:max-w-\[295px\]{
+    max-width: 295px;
   }
 
   .xsm\:flex-row{
@@ -2136,6 +2172,11 @@ input, textarea, button{
   .xsm\:px-7\.5{
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .xsm\:px-9{
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
   }
 
   .xsm\:pl-3{
