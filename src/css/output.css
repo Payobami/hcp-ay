@@ -948,6 +948,18 @@ input, textarea, button{
   min-width: 333px;
 }
 
+.min-w-\[295px\]{
+  min-width: 295px;
+}
+
+.min-w-\[1060px\]{
+  min-width: 1060px;
+}
+
+.min-w-\[1025px\]{
+  min-width: 1025px;
+}
+
 .max-w-\[295px\]{
   max-width: 295px;
 }
@@ -2083,4 +2095,9 @@ input, textarea, button{
 .odd\:\[\&\>tr\]\:bg-\[\#F8F8F8\]>tr:nth-child(odd){
   --tw-bg-opacity: 1;
   background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+}
+
+.even\:\[\&\>tr\]\:bg-white>tr:nth-child(even){
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }

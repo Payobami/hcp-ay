@@ -28,8 +28,8 @@
         </div>
     </nav>
 
-    <main id="main-el" class="flex mt-[60px]">
-        <aside class="z-50 bg-white h-full w-[260px] min-h-screen py-8 shadow-[5px_rounded-5_7px_rgba(0,0,0,0.08)] fixed left-0">
+    <main id="main-el" class="flex mt-[60px] hide-sidebar">
+        <aside id="sidebar" class="z-50 bg-white h-full w-[260px] min-h-screen py-8 shadow-[5px_rounded-5_7px_rgba(0,0,0,0.08)] fixed left-0">
             <div class="mb-[26px] px-7">
                 <p class="text-mild-black text-lg mb-1 leading-7">Hi, Adeyemi Inc.</p>
                 <p class="text-[15px] font-light leading-5 text-grey-1">Admin@hcp.com</p>
@@ -77,7 +77,7 @@
         </aside>
 
         <!-- In the calculation calc(100vh - 60px), 60px is the height of the fixed nav. This is done to even the height of the main screen to prevent unnecessary vertical overflows -->
-        <section id="main-content" class="ml-[260px] [&>div]:relative [&>div]:z-20 pt-8 px-8 flex-1 relative w-full min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
+        <section id="main-content" class="w-fit ml-[260px] [&>div]:relative [&>div]:z-20 pt-8 px-8 flex-1 relative min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
             <div class="flex justify-end gap-3 leading-5 mb-5">
                 <button class="border border-[#B6B6B6] rounded-5 w-[200px] h-10 text-black text-opacity-50 text-15">
                     Search Course
@@ -89,7 +89,7 @@
             </div>
 
             <div class="w-full mb-20 bg-white rounded-10 shadow-[rounded-5_5px_25px_rgba(0,0,0,0.06)]">
-                <table class="courses-table w-full">
+                <table class="courses-table w-full min-w-[1025px]">
                     <thead>
                         <tr class="table-headings">
                             <th class="id w-[9%]">#</th>
@@ -100,7 +100,7 @@
                             <th class="action w-[18%] pl-5">Action</th>
                         </tr>
                     </thead>
-                    <tbody class="odd:[&>tr]:bg-[#F8F8F8]">
+                    <tbody class="even:[&>tr]:bg-white odd:[&>tr]:bg-[#F8F8F8]">
                         <tr>
                             <td class="id">1</td>
                             <td>Clean Desk Policy</td>
