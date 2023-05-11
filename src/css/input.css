@@ -54,6 +54,10 @@
     transition: 0.3s ease-in-out opacity 0.3s;
 }
 
+.hide-sidebar #main-content {
+    width: 100%;
+}
+
 #sidebar {
     transition: 0.6s ease-in-out width;
 }

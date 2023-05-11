@@ -28,8 +28,8 @@
         </div>
     </nav>
 
-    <main id="main-el" class="flex mt-[60px]">
-        <aside class="sidebar z-50 bg-white h-full w-[260px] min-h-screen py-8 shadow-[5px_-5px_7px_rgba(0,0,0,0.08)] fixed left-0" id="sidebar">
+    <main id="main-el" class="flex mt-[60px] hide-sidebar">
+        <aside id="sidebar" class="sidebar z-50 bg-white h-full w-[260px] min-h-screen py-8 shadow-[5px_-5px_7px_rgba(0,0,0,0.08)] fixed left-0" id="sidebar">
             <div class="mb-[26px] px-7">
                 <p class="text-mild-black text-lg mb-1 leading-7">Hi, Adeyemi Inc.</p>
                 <p class="text-[15px] font-light leading-5 text-grey-1">Admin@hcp.com</p>
@@ -77,21 +77,21 @@
         </aside>
 
         <!-- In the calculation calc(100vh - 60px), 60px is the height of the fixed nav. This is done to even the height of the main screen to prevent unnecessary vertical overflows -->
-        <section id="main-content" class="ml-[260px] [&>div]:relative [&>div]:z-20 pt-9 px-7 flex-1 relative w-full min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
-            <div>
+        <section id="main-content" class="ml-[260px] [&>div]:relative [&>div]:z-20 pt-9 px-3.5 xsm:px-7 flex-1 relative min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
+            <div class="">
                 <h4 class="uppercase text-brand-green leading-7 text-lg mb-4">Testimonial</h4>
                 <div class="bg-white border border-[#E2E2E2] shadow-[-5px_5px_25px_rgba(0,0,0,0.06)] rounded-10 py-[22px] mb-12">
-                    <h2 class="mb-2.5 text-black-2 tracking-wider leading-[38px] text-2xl font-semibold px-7">Received Testimonials</h2>
-                    <div class="border-t border-[#A1A1A1] border-opacity-[39%] pt-8 px-7">
-                        <div class="grid grid-cols-2 gap-y-7 gap-x-8 mb-10">
-                            <div class="max-w-1/2 px-5 py-[18px] rounded-md bg-white border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)]">
-                                <div class="flex gap-16 justify-between items-center mb-[22px]">
-                                    <div class="flex gap-2 items-center">
+                    <h2 class="mb-2.5 text-black-2 tracking-wider leading-[38px] text-2xl font-semibold px-7 md:text-center min-[1320px]:text-left">Received Testimonials</h2>
+                    <div class="border-t border-[#A1A1A1] border-opacity-[39%] pt-8 px-4 xsm:px-7">
+                        <div class="grid min-[1320px]:grid-cols-2 gap-y-7 gap-x-6 mb-10">
+                            <div class="mx-auto w-full max-w-full xsm:max-w-[620px] px-5 py-[18px] rounded-md bg-white border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)]">
+                                <div class="flex flex-wrap lg:flex-nowrap gap-y-4 gap-x-16 justify-between items-center mb-6 max-[400px]:justify-center">
+                                    <div class="flex gap-2 items-center max-[400px]:flex-col max-[400px]:justify-center">
                                         <img class="w-[70px] h-[70px]" src="../img/testimonials/1.png" />
                                         <h5 class="font-bold text-sm leading-5 tracking-wider text-black-2">Anonymous</h5>
                                     </div>
     
-                                    <div class="mb-0 flex justify-end gap-3 leading-5 text-sm font-medium text-center">
+                                    <div class="mb-0 flex justify-end gap-3 leading-5 text-sm font-medium text-center flex-wrap xsm:flex-nowrap">
                                         <button class="border border-brand-green bg-white rounded-[3px] w-[100px] h-9 text-brand-green">
                                             Delete
                                         </button>
@@ -102,18 +102,18 @@
                                 </div>
     
                                 <div class="text-sm">
-                                    <h6 class="leading-5 tracking-wider font-medium text-black-2 mb-1.5">Best Platform</h6>
+                                    <h6 class="leading-5 tracking-wider font-medium text-black-2 mb-2">Best Platform</h6>
                                     <p class="leading-6 text-gray-700">The experience was lovely. The facilitators understood our pain points and communicated the solutions effectively. They showed excellent knowledge of the subject matter and carried all of us along. The result of the training is already evident in how I communicate at work.</p>
                                 </div>
                             </div>
-                            <div class="max-w-1/2 px-5 py-[18px] rounded-md bg-white border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)]">
-                                <div class="flex gap-16 justify-between items-center mb-[22px]">
-                                    <div class="flex gap-2 items-center">
+                            <div class="mx-auto w-full max-w-full xsm:max-w-[620px] px-5 py-[18px] rounded-md bg-white border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)]">
+                                <div class="flex flex-wrap lg:flex-nowrap gap-y-4 gap-x-16 justify-between items-center mb-6 max-[400px]:justify-center">
+                                    <div class="flex gap-2 items-center max-[400px]:flex-col max-[400px]:justify-center">
                                         <img class="w-[70px] h-[70px]" src="../img/testimonials/1.png" />
                                         <h5 class="font-bold text-sm leading-5 tracking-wider text-black-2">Anonymous</h5>
                                     </div>
     
-                                    <div class="mb-0 flex justify-end gap-3 leading-5 text-sm font-medium text-center">
+                                    <div class="mb-0 flex justify-end gap-3 leading-5 text-sm font-medium text-center flex-wrap xsm:flex-nowrap">
                                         <button class="border border-brand-green bg-white rounded-[3px] w-[100px] h-9 text-brand-green">
                                             Delete
                                         </button>
@@ -124,18 +124,18 @@
                                 </div>
     
                                 <div class="text-sm">
-                                    <h6 class="leading-5 tracking-wider font-medium text-black-2 mb-1.5">Best Platform</h6>
+                                    <h6 class="leading-5 tracking-wider font-medium text-black-2 mb-2">Best Platform</h6>
                                     <p class="leading-6 text-gray-700">The experience was lovely. The facilitators understood our pain points and communicated the solutions effectively. They showed excellent knowledge of the subject matter and carried all of us along. The result of the training is already evident in how I communicate at work.</p>
                                 </div>
                             </div>
-                            <div class="max-w-1/2 px-5 py-[18px] rounded-md bg-white border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)]">
-                                <div class="flex gap-16 justify-between items-center mb-[22px]">
-                                    <div class="flex gap-2 items-center">
+                            <div class="mx-auto w-full max-w-full xsm:max-w-[620px] px-5 py-[18px] rounded-md bg-white border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)]">
+                                <div class="flex flex-wrap lg:flex-nowrap gap-y-4 gap-x-16 justify-between items-center mb-6 max-[400px]:justify-center">
+                                    <div class="flex gap-2 items-center max-[400px]:flex-col max-[400px]:justify-center">
                                         <img class="w-[70px] h-[70px]" src="../img/testimonials/1.png" />
                                         <h5 class="font-bold text-sm leading-5 tracking-wider text-black-2">Anonymous</h5>
                                     </div>
     
-                                    <div class="mb-0 flex justify-end gap-3 leading-5 text-sm font-medium text-center">
+                                    <div class="mb-0 flex justify-end gap-3 leading-5 text-sm font-medium text-center flex-wrap xsm:flex-nowrap">
                                         <button class="border border-brand-green bg-white rounded-[3px] w-[100px] h-9 text-brand-green">
                                             Delete
                                         </button>
@@ -146,18 +146,18 @@
                                 </div>
     
                                 <div class="text-sm">
-                                    <h6 class="leading-5 tracking-wider font-medium text-black-2 mb-1.5">Best Platform</h6>
+                                    <h6 class="leading-5 tracking-wider font-medium text-black-2 mb-2">Best Platform</h6>
                                     <p class="leading-6 text-gray-700">The experience was lovely. The facilitators understood our pain points and communicated the solutions effectively. They showed excellent knowledge of the subject matter and carried all of us along. The result of the training is already evident in how I communicate at work.</p>
                                 </div>
                             </div>
-                            <div class="max-w-1/2 px-5 py-[18px] rounded-md bg-white border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)]">
-                                <div class="flex gap-16 justify-between items-center mb-[22px]">
-                                    <div class="flex gap-2 items-center">
+                            <div class="mx-auto w-full max-w-full xsm:max-w-[620px] px-5 py-[18px] rounded-md bg-white border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)]">
+                                <div class="flex flex-wrap lg:flex-nowrap gap-y-4 gap-x-16 justify-between items-center mb-6 max-[400px]:justify-center">
+                                    <div class="flex gap-2 items-center max-[400px]:flex-col max-[400px]:justify-center">
                                         <img class="w-[70px] h-[70px]" src="../img/testimonials/1.png" />
                                         <h5 class="font-bold text-sm leading-5 tracking-wider text-black-2">Anonymous</h5>
                                     </div>
     
-                                    <div class="mb-0 flex justify-end gap-3 leading-5 text-sm font-medium text-center">
+                                    <div class="mb-0 flex justify-end gap-3 leading-5 text-sm font-medium text-center flex-wrap xsm:flex-nowrap">
                                         <button class="border border-brand-green bg-white rounded-[3px] w-[100px] h-9 text-brand-green">
                                             Delete
                                         </button>
@@ -168,23 +168,25 @@
                                 </div>
     
                                 <div class="text-sm">
-                                    <h6 class="leading-5 tracking-wider font-medium text-black-2 mb-1.5">Best Platform</h6>
+                                    <h6 class="leading-5 tracking-wider font-medium text-black-2 mb-2">Best Platform</h6>
                                     <p class="leading-6 text-gray-700">The experience was lovely. The facilitators understood our pain points and communicated the solutions effectively. They showed excellent knowledge of the subject matter and carried all of us along. The result of the training is already evident in how I communicate at work.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex text-xs leading-[18px] w-fit mb-4">
-                            <button class="h-7.5 border-l border-y border-[#C4C4C4] rounded-l-5 pl-3 py-1.5 pr-1.5 text-grey-1 hover:border-grey-1 hover:bg-grey-1 hover:text-white">
+                        <div class="flex flex-wrap gap-5 flex-col xsm:gap-0 xsm:flex-row text-xs leading-[18px] w-fit mb-4">
+                            <button class="w-fit px-5 h-7.5 border xsm:border-r-0 border-[#C4C4C4] rounded-5 xsm:rounded-r-none xsm:pl-3 py-1.5 xsm:pr-2 text-grey-1 hover:border-grey-1 hover:bg-grey-1 hover:text-white">
                                 Previous
                             </button>
-                            <a class="bg-brand-green w-7.5 h-7.5 text-white center-content">1</a>
-                            <a class="hover:border-brand-green hover:bg-brand-green hover:text-white border border-y border-l-0 border-[#C4C4C4] w-7.5 h-7.5 text-brand-green center-content">2</a>
-                            <a class="hover:border-brand-green hover:bg-brand-green hover:text-white border border-y border-l-0 border-[#C4C4C4] w-7.5 h-7.5 text-brand-green center-content">3</a>
-                            <a class="hover:border-brand-green hover:bg-brand-green hover:text-white border border-y border-l-0 border-[#C4C4C4] w-7.5 h-7.5 text-brand-green center-content">4</a>
-                            <a class="hover:border-brand-green hover:bg-brand-green hover:text-white border border-y border-l-0 border-[#C4C4C4] w-7.5 h-7.5 text-brand-green center-content">5</a>
-                            <a class="hover:border-grey-1 hover:bg-grey-1 hover:text-white border border-y border-l-0 border-[#C4C4C4] w-7.5 h-7.5 text-grey-1 center-content">...</a>
-                            <a class="hover:border-brand-green hover:bg-brand-green hover:text-white border border-y border-l-0 border-[#C4C4C4] w-7.5 h-7.5 text-brand-green center-content">23</a>
-                            <button class="h-7.5 border-r border-y border-[#C4C4C4] rounded-r-5 pl-3 py-1.5 pr-5 text-brand-green hover:border-brand-green hover:bg-brand-green hover:text-white">
+                            <div class="flex">
+                                <a class="bg-brand-green w-7.5 h-7.5 text-white center-content">1</a>
+                                <a class="hover:border-brand-green hover:bg-brand-green hover:text-white border border-y border-l-0 border-[#C4C4C4] w-7.5 h-7.5 text-brand-green center-content">2</a>
+                                <a class="hover:border-brand-green hover:bg-brand-green hover:text-white border border-y border-l-0 border-[#C4C4C4] w-7.5 h-7.5 text-brand-green center-content">3</a>
+                                <a class="hover:border-brand-green hover:bg-brand-green hover:text-white border border-y border-l-0 border-[#C4C4C4] w-7.5 h-7.5 text-brand-green center-content">4</a>
+                                <a class="hover:border-brand-green hover:bg-brand-green hover:text-white border border-y border-l-0 border-[#C4C4C4] w-7.5 h-7.5 text-brand-green center-content">5</a>
+                                <a class="hover:border-grey-1 hover:bg-grey-1 hover:text-white border border-y border-l-0 border-[#C4C4C4] w-7.5 h-7.5 text-grey-1 center-content">...</a>
+                                <a class="hover:border-brand-green hover:bg-brand-green hover:text-white border border-y border-l-0 border-[#C4C4C4] w-7.5 h-7.5 text-brand-green center-content">23</a>
+                            </div>
+                            <button class="w-fit px-8 h-7.5 border xsm:border-l-0 border-[#C4C4C4] rounded-5 xsm:rounded-l-none xsm:pl-3 py-1.5 xsm:pr-5 text-brand-green hover:border-brand-green hover:bg-brand-green hover:text-white">
                                 Next
                             </button>
                         </div>
