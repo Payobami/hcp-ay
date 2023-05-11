@@ -29,8 +29,8 @@
         </div>
     </nav>
 
-    <main id="main-el" class="flex mt-[60px]">
-        <aside class="sidebar z-50 bg-white h-full w-[260px] min-h-screen py-8 shadow-[5px_-5px_7px_rgba(0,0,0,0.08)] fixed left-0" id="sidebar">
+    <main id="main-el" class="flex mt-[60px] hide-sidebar">
+        <aside id="sidebar" class="sidebar z-50 bg-white h-full w-[260px] min-h-screen py-8 shadow-[5px_-5px_7px_rgba(0,0,0,0.08)] fixed left-0" id="sidebar">
             <div class="mb-[26px] px-7">
                 <p class="text-mild-black text-lg mb-1 leading-7">Hi, Adeyemi Inc.</p>
                 <p class="text-[15px] font-light leading-5 text-grey-1">Admin@hcp.com</p>
@@ -78,7 +78,7 @@
         </aside>
 
         <!-- In the calculation calc(100vh - 60px), 60px is the height of the fixed nav. This is done to even the height of the main screen to prevent unnecessary vertical overflows -->
-        <section id="main-content" class="ml-[260px] [&>div]:relative [&>div]:z-20 pt-8 px-7 flex-1 relative w-full min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
+        <section id="main-content" class="ml-[260px] [&>div]:relative [&>div]:z-20 pt-8 px-3.5 xsm:px-7 flex-1 relative w-full min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
             <div>
                 <a class="w-fit flex items-center gap-3 uppercase text-[#656972] text-xs leading-5 mb-[18px] group">
                     <svg class="group-hover:scale-90 ease-in-out duration-300" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,10 +90,10 @@
                 <div class="mb-12">
                     <div class="w-full bg-white border border-[#E2E2E2] shadow-[-5px_5px_25px_rgba(0,0,0,0.06)] rounded-10 py-6">
                         <h2 class="mb-2.5 text-black-2 tracking-wider leading-7 text-lg font-semibold px-8">Customise Dashboard</h2>
-                        <div class="border-t border-[#A1A1A1] border-opacity-[39%] pt-8 px-7.5 mb-5">
-                            <div class="flex gap-7 mb-28">
-                                <div class="pt-6 pr-5 border-r-2 border-r-[#A1A1A1] border-opacity-[39%]">
-                                    <div class="flex gap-3 items-center mb-7">
+                        <div class="border-t border-[#A1A1A1] border-opacity-[39%] pt-8 px-5 xsm:px-7.5 mb-5">
+                            <div class="flex lg:justify-between flex-wrap xl:flex-nowrap gap-y-14 gap-x-7 mb-20 xl:mb-28 lg:[&>div]:max-w-[46%]">
+                                <div class="pt-3 xsm:pt-6 xsm:pr-5 min-[485px]:border-r-2 min-[485px]:border-r-[#A1A1A1] min-[485px]:border-opacity-[39%]">
+                                    <div class="flex flex-wrap gap-3 items-center mb-7">
                                         <img src="../img/bland-logo.png" />
                                         <div class="">
                                             <div class="flex justify-between items-center">
@@ -111,14 +111,14 @@
                                     </p>
                                 </div>
 
-                                <div class="pt-6 pr-5 border-r-2 border-r-[#A1A1A1] border-opacity-[39%]">
+                                <div class="pt-6 xsm:pr-5 min-[485px]:border-r-2 min-[485px]:border-r-[#A1A1A1] min-[485px]:border-opacity-[39%]">
                                     <div class="flex gap-3 items-center mb-7">
                                         <div class="">
                                             <div class="flex w-full justify-between items-center mb-2">
                                                 <p class="text-black-2 font-semibold text-sm leading-7">Customise Domain Url</p>
-                                                <img class="ml-8" src="../svg/info-button.svg" />
+                                                <img class="xsm:ml-8" src="../svg/info-button.svg" />
                                             </div>
-                                            <form class="flex gap-1.5 items-center">
+                                            <form class="flex flex-wrap justify-center xsm:justify-start xsm:flex-nowrap gap-1.5 items-center">
                                                 <input class="bg-white py-2 w-[150px] text-[15px] text-[#959595] font-light leading-[22px] text-center border rounded-5 border-[#D5D5D5]" placeholder="Adeyemi Inc" />
                                                 <p class="text-[#464646] leading-5 font-light text-[15px]">@davtonlms.com</p>
                                             </form>
@@ -129,14 +129,14 @@
                                     </p>
                                 </div>
 
-                                <div class="border-opacity-[39%]">
+                                <div class="border-opacity-[39%] lg:!max-w-[67%]">
                                     <div class="flex gap-3 items-center mb-7">
                                         <div class="">
                                             <div class="flex gap-2.5 items-center mb-5">
                                                 <p class="text-black-2 mb-0.5 font-semibold text-sm leading-7">Select company color</p>
                                                 <img class="ml-3" src="../svg/info-button.svg" />
                                             </div>
-                                            <div class="flex flex-wrap gap-0.5">
+                                            <div class="flex flex-wrap justify-center xsm:justify-start gap-0.5">
                                                 <a class="w-[56px] h-[38px] company-color-gradient flex items-center justify-center">
                                                     <img src="../svg/arrow-down-2.svg" />
                                                 </a>
@@ -158,11 +158,11 @@
                                 </div>
                             </div>
 
-                            <div class="mb-0 flex gap-[18px] leading-5 text-sm font-medium text-center">
-                                <button class="border border-brand-green bg-brand-green rounded-[3px] w-[170px] h-10 text-white filled-hover">
+                            <div class="mb-0 flex flex-wrap justify-center xsm:justify-start xsm:flex-nowrap gap-[18px] leading-5 text-sm font-medium text-center">
+                                <button class="max-w-full border border-brand-green bg-brand-green rounded-[3px] w-[170px] h-10 text-white filled-hover">
                                     Save Changes
                                 </button>
-                                <button class="border border-brand-green bg-white rounded-[3px] w-[170px] h-10 text-brand-green outline-hover">
+                                <button class="max-w-full border border-brand-green bg-white rounded-[3px] w-[170px] h-10 text-brand-green outline-hover">
                                     Cancel
                                 </button>
                             </div>
@@ -172,10 +172,10 @@
                 <div class="">
                     <div class="w-full bg-white border border-[#E2E2E2] shadow-[-5px_5px_25px_rgba(0,0,0,0.06)] rounded-10 py-6">
                         <h2 class="mb-2.5 text-black-2 tracking-wider leading-7 text-lg font-semibold px-8">Landing Page</h2>
-                        <div class="border-t border-[#A1A1A1] border-opacity-[39%] pt-8 px-7.5 mb-5">
-                            <div class="flex gap-24 mb-[50px]">
+                        <div class="border-t border-[#A1A1A1] border-opacity-[39%] pt-8 px-5 xsm:px-7.5 mb-5">
+                            <div class="flex gap-y-14 gap-x-24 mb-20 lg:mb-[50px] flex-col lg:flex-row">
                                 <div class="h-fit flex-1">
-                                    <div class="mb-5">
+                                    <div class="mb-10 lg:mb-6">
                                         <p class="text-black-2 font-semibold text-sm leading-5 mb-3">Header Text</p>
                                         <div>
                                             <div id="header-editor" class="!h-[180px] !font-poppins text-[#9E9E9E]">
@@ -187,7 +187,7 @@
                                     </div>
 
                                     <div class="">
-                                        <p class="text-black-2 font-semibold text-sm leading-5 mb-3">Header Text</p>
+                                        <p class="text-black-2 font-semibold text-sm leading-5 mb-3">Sub Text</p>
                                         <div>
                                             <div id="subtext-editor" class="!h-[180px] !font-poppins text-[#5E5E5E] [&>p]:!leading-6">
                                                 <p class="">We offer a wide range of courses to help you develop new skills and advance your career. Our courses are designed to be interactive and engaging, with expert instructors who are passionate about teaching.</p>
@@ -197,9 +197,9 @@
 
                                 </div>
                                 
-                                <div class="w-[425px]">
+                                <div class="w-[425px] max-w-full">
                                     <p class="text-black-2 font-semibold text-sm leading-5 mb-3">Upload Header Image</p>
-                                    <img class="mb-7.5" src="../img/upload-img.jpg" />
+                                    <img class="max-w-full mb-7.5" src="../img/upload-img.jpg" />
                                     <button class="font-medium text-sm border border-brand-green bg-white rounded-[3px] w-[170px] h-10 text-brand-green outline-hover">
                                         Change Image
                                     </button>

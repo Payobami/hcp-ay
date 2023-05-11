@@ -766,6 +766,10 @@ input, textarea, button{
   margin-top: auto;
 }
 
+.mr-0{
+  margin-right: 0px;
+}
+
 .block{
   display: block;
 }
@@ -968,6 +972,14 @@ input, textarea, button{
   max-width: 600px;
 }
 
+.max-w-\[700px\]{
+  max-width: 700px;
+}
+
+.max-w-full{
+  max-width: 100%;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -1006,6 +1018,10 @@ input, textarea, button{
 
 .justify-between{
   justify-content: space-between;
+}
+
+.justify-evenly{
+  justify-content: space-evenly;
 }
 
 .gap-0{
@@ -1072,6 +1088,10 @@ input, textarea, button{
   gap: 7px;
 }
 
+.gap-14{
+  gap: 3.5rem;
+}
+
 .gap-x-8{
   -moz-column-gap: 2rem;
        column-gap: 2rem;
@@ -1088,6 +1108,28 @@ input, textarea, button{
 
 .gap-y-7{
   row-gap: 1.75rem;
+}
+
+.gap-y-14{
+  row-gap: 3.5rem;
+}
+
+.gap-x-7{
+  -moz-column-gap: 1.75rem;
+       column-gap: 1.75rem;
+}
+
+.gap-x-24{
+  -moz-column-gap: 6rem;
+       column-gap: 6rem;
+}
+
+.gap-y-20{
+  row-gap: 5rem;
+}
+
+.gap-y-24{
+  row-gap: 6rem;
 }
 
 .rounded{
@@ -1407,6 +1449,11 @@ input, textarea, button{
   padding-bottom: 9px;
 }
 
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pb-5{
   padding-bottom: 1.25rem;
 }
@@ -1465,6 +1512,10 @@ input, textarea, button{
 
 .pt-\[69px\]{
   padding-top: 69px;
+}
+
+.pt-3{
+  padding-top: 0.75rem;
 }
 
 .text-left{
@@ -2062,14 +2113,112 @@ input, textarea, button{
   }
 }
 
+@media (min-width: 485px){
+  .min-\[485px\]\:border-r-2{
+    border-right-width: 2px;
+  }
+
+  .min-\[485px\]\:border-r-\[\#A1A1A1\]{
+    --tw-border-opacity: 1;
+    border-right-color: rgb(161 161 161 / var(--tw-border-opacity));
+  }
+
+  .min-\[485px\]\:border-opacity-\[39\%\]{
+    --tw-border-opacity: 39%;
+  }
+}
+
 @media (min-width: 576px){
+  .xsm\:ml-8{
+    margin-left: 2rem;
+  }
+
+  .xsm\:w-fit{
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .xsm\:flex-nowrap{
+    flex-wrap: nowrap;
+  }
+
+  .xsm\:justify-start{
+    justify-content: flex-start;
+  }
+
+  .xsm\:justify-between{
+    justify-content: space-between;
+  }
+
+  .xsm\:gap-7{
+    gap: 1.75rem;
+  }
+
+  .xsm\:gap-3{
+    gap: 0.75rem;
+  }
+
   .xsm\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+
+  .xsm\:px-7{
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .xsm\:px-7\.5{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .xsm\:pr-5{
+    padding-right: 1.25rem;
+  }
+
+  .xsm\:pt-6{
+    padding-top: 1.5rem;
+  }
 }
 
 @media (min-width: 992px){
+  .lg\:mb-\[50px\]{
+    margin-bottom: 50px;
+  }
+
+  .lg\:mb-6{
+    margin-bottom: 1.5rem;
+  }
+
+  .lg\:max-w-\[60\%\]{
+    max-width: 60%;
+  }
+
+  .lg\:max-w-\[63\%\]{
+    max-width: 63%;
+  }
+
+  .lg\:\!max-w-\[63\%\]{
+    max-width: 63% !important;
+  }
+
+  .lg\:\!max-w-\[65\%\]{
+    max-width: 65% !important;
+  }
+
+  .lg\:\!max-w-\[67\%\]{
+    max-width: 67% !important;
+  }
+
+  .lg\:flex-row{
+    flex-direction: row;
+  }
+
+  .lg\:justify-between{
+    justify-content: space-between;
+  }
+
   .lg\:gap-16{
     gap: 4rem;
   }
@@ -2080,12 +2229,54 @@ input, textarea, button{
   }
 }
 
+@media (min-width: 1200px){
+  .xl\:mb-28{
+    margin-bottom: 7rem;
+  }
+
+  .xl\:flex-row{
+    flex-direction: row;
+  }
+
+  .xl\:flex-nowrap{
+    flex-wrap: nowrap;
+  }
+
+  .xl\:gap-7{
+    gap: 1.75rem;
+  }
+}
+
 .\[\&\>div\]\:relative>div{
   position: relative;
 }
 
 .\[\&\>div\]\:z-20>div{
   z-index: 20;
+}
+
+@media (min-width: 576px){
+  .xsm\:\[\&\>div\]\:max-w-\[50\%\]>div{
+    max-width: 50%;
+  }
+
+  .xsm\:\[\&\>div\]\:max-w-\[48\%\]>div{
+    max-width: 48%;
+  }
+
+  .xsm\:\[\&\>div\]\:max-w-\[45\%\]>div{
+    max-width: 45%;
+  }
+
+  .xsm\:\[\&\>div\]\:max-w-\[46\%\]>div{
+    max-width: 46%;
+  }
+}
+
+@media (min-width: 992px){
+  .lg\:\[\&\>div\]\:max-w-\[46\%\]>div{
+    max-width: 46%;
+  }
 }
 
 .\[\&\>p\]\:\!leading-6>p{

@@ -2,7 +2,7 @@ let openModal = false;
 let openSidebar = false;
 let modal = document.getElementById("review-modal")
 let main = document.getElementById("main-el")
-if (document.body.clientWidth > 768) {
+if (document.body.clientWidth >= 1200) {
     main.classList.remove("hide-sidebar")
 }
 
