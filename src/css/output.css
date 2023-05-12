@@ -1173,6 +1173,10 @@ input, textarea, button{
   max-width: 36rem;
 }
 
+.max-w-\[50\%\]{
+  max-width: 50%;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }

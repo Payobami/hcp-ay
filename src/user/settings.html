@@ -40,7 +40,7 @@
                     <img src="../svg/grid.svg" />
                     Dashboard
                 </a>
-                <a class="flex items-center gap-3.5 py-[9px] pl-10">
+                <a class="flex items-center gap-3.5 py-[9px] pl-10" onclick="viewModal(true)">
                     <img src="../svg/course.svg" />
                     Courses
                 </a>
@@ -86,6 +86,26 @@
             </div>
         </section>
     </main>
+    <div id="review-modal" class="hide-modal fixed top-0 bottom-0 flex items-center justify-center w-full h-full bg-black bg-opacity-70 z-60 transition-all ease-linear duration-[400ms]" onclick="viewModal(false)">
+        <div class="bg-white px-10 pt-10 pb-9 max-w-[600px] flex flex-col items-center border border-[#E2E2E2] rounded-10 shadow-[-5px_5px_25px_rgba(0,0,0,0.06)] delay-300 ease-linear duration-[400ms]">
+            <img class="w-14 h-14 mb-1.5" src="../img/performance-1.png" />
+            <h1 class="text-brand-green font-black leading-[66px] tracking-tight text-[44px] mb-3">Review Course</h1>
+            <div class="flex gap-3 items-center mb-8">
+                <img class="object-scale-down w-14 h-14" src="../img/star-filled.png" />
+                <img class="object-scale-down mb-2 w-fit h-fit" src="../img/star.png" />
+                <img class="object-scale-down mb-2 w-fit h-fit" src="../img/star.png" />
+                <img class="object-scale-down mb-2 w-fit h-fit" src="../img/star.png" />
+                <img class="object-scale-down mb-2 w-fit h-fit" src="../img/star.png" />
+            </div>
+            <h3 class="text-black-2 font-medium text-[21px] leading-8 tracking-tight mb-7">Course Completed</h3>
+            <form>
+                <textarea class="w-[483px] h-[86px] mb-8 px-3 py-1.5 text-[#57584F] text-opacity-100 placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 focus:border-opacity-80 text-sm leading-7 tracking-tight rounded" placeholder="Additional Feedback would be appreciated (Optional)"></textarea>
+                <button class="block mx-auto uppercase border border-brand-green bg-brand-green rounded-5 px-16 py-4 text-white filled-hover">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
 </body>
 <script src="../js/hcp.js"></script>
 </html>
