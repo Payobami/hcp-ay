@@ -28,8 +28,8 @@
         </div>
     </nav>
 
-    <main id="main-el" class="flex mt-[60px]">
-        <aside class="sidebar z-50 bg-white h-full w-[260px] min-h-screen py-8 shadow-[5px_-5px_7px_rgba(0,0,0,0.08)] fixed left-0" id="sidebar">
+    <main id="main-el" class="flex mt-[60px] hide-sidebar">
+        <aside id="sidebar" class="sidebar z-50 bg-white h-full w-[260px] min-h-screen py-8 shadow-[5px_-5px_7px_rgba(0,0,0,0.08)] fixed left-0">
             <div class="mb-[26px] px-7">
                 <p class="text-mild-black text-lg mb-1 leading-7">Hi, Adeyemi Inc.</p>
                 <p class="text-[15px] font-light leading-5 text-grey-1">Adeyemi@gmail.com</p>
@@ -60,24 +60,19 @@
         </aside>
 
         <!-- In the calculation calc(100vh - 60px), 60px is the height of the fixed nav. This is done to even the height of the main screen to prevent unnecessary vertical overflows -->
-        <section id="main-content" class="ml-[260px] [&>div]:relative [&>div]:z-20 pt-8 px-7 flex-1 relative w-full min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
+        <section id="main-content" class="ml-[260px] [&>div]:relative [&>div]:z-20 pt-8 px-3.5 xsm:px-7 flex-1 relative w-full min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
             <div>
                 <a class="w-fit flex items-center gap-3 uppercase text-[#656972] text-xs leading-5 mb-[18px] group">
                     <svg class="group-hover:scale-90 ease-in-out duration-300" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="fill-[#656972]" d="M14.5735 12.4849C14.7774 12.2731 15.1168 12.2731 15.3278 12.4849C15.5317 12.6896 15.5317 13.0303 15.3278 13.2345L11.5031 17.0742H24.1243C24.4185 17.0747 24.6523 17.3094 24.6523 17.6048C24.6523 17.9001 24.4185 18.1425 24.1243 18.1425H11.5031L15.3278 21.9751C15.5317 22.1869 15.5317 22.5281 15.3278 22.7323C15.1168 22.9442 14.777 22.9442 14.5735 22.7323L9.8433 17.9836C9.63226 17.7789 9.63226 17.4383 9.8433 17.234L14.5735 12.4849Z"/>
                         <circle class="" cx="17.6086" cy="17.6086" r="16.7282" stroke="#656972" stroke-width="1.76086"/>
                     </svg>
-                    <!-- <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="fill-[#656972]" d="M12 22.75C6.07 22.75 1.25 17.93 1.25 12C1.25 6.07 6.07 1.25 12 1.25C17.93 1.25 22.75 6.07 22.75 12C22.75 17.93 17.93 22.75 12 22.75ZM12 2.75C6.9 2.75 2.75 6.9 2.75 12C2.75 17.1 6.9 21.25 12 21.25C17.1 21.25 21.25 17.1 21.25 12C21.25 6.9 17.1 2.75 12 2.75Z"/>
-                        <path class="fill-[#656972]" d="M15.5 12.75H9.5C9.09 12.75 8.75 12.41 8.75 12C8.75 11.59 9.09 11.25 9.5 11.25H15.5C15.91 11.25 16.25 11.59 16.25 12C16.25 12.41 15.91 12.75 15.5 12.75Z"/>
-                        <path class="fill-[#656972]" d="M11.4995 15.7499C11.3095 15.7499 11.1195 15.6799 10.9695 15.5299L7.96945 12.5299C7.67945 12.2399 7.67945 11.7599 7.96945 11.4699L10.9695 8.46994C11.2595 8.17994 11.7395 8.17994 12.0295 8.46994C12.3195 8.75994 12.3195 9.23994 12.0295 9.52994L9.55945 11.9999L12.0295 14.4699C12.3195 14.7599 12.3195 15.2399 12.0295 15.5299C11.8795 15.6799 11.6895 15.7499 11.4995 15.7499Z" />
-                    </svg> -->
                     Back
                 </a>
-                <div class="flex gap-[18px] mb-14">
-                    <div class="bg-white border border-[#E2E2E2] shadow-[-5px_5px_25px_rgba(0,0,0,0.06)] rounded-10 w-fit">
+                <div class="flex flex-col lg:flex-row gap-[18px] mb-14">
+                    <div class="w-full lg:w-fit bg-white border border-[#E2E2E2] shadow-[-5px_5px_25px_rgba(0,0,0,0.06)] rounded-10">
                         <div class="pt-[69px] px-[60px] greyish-gradient rounded-10 text-center mb-[53px]">
-                            <img class="mb-[26px]" src="../img/user-1.png" />
+                            <img class="mx-auto lg:mx-0 mb-[26px]" src="../img/user-1.png" />
                             <p class="text-brand-green font-medium text-xs leading-7">Upload Photo</p>
                         </div>
                         <div class="mb-16 px-3.5">
@@ -106,38 +101,40 @@
 
                     <div class="flex-1 w-full bg-white border border-[#E2E2E2] shadow-[-5px_5px_25px_rgba(0,0,0,0.06)] rounded-10 py-4">
                         <h2 class="mb-2.5 text-black-2 tracking-wider leading-7 text-lg font-semibold px-9">My Profile</h2>
-                        <form class="flex flex-wrap gap-y-6 gap-x-9 border-t border-[#A1A1A1] border-opacity-[39%] pt-8 px-7.5 mb-5">
-                            <fieldset class="flex flex-col w-[47%]">
-                                <label class="text-sm leading-7 text-black text-opacity-[58%] mb-1">First Name</label>
-                                <input disabled class="disabled:bg-[#F7F7F7] h-10 border border-[#D8D8D8] rounded-md py-3 px-4 text-sm text-black-2 text-opacity-70 disabled:text-black disabled:text-opacity-[58%]" type="text" placeholder="Adeyemi" />
-                            </fieldset>
-                            <fieldset class="flex flex-col w-[47%]">
-                                <label class="text-sm leading-7 text-black text-opacity-[58%] mb-1">Last Name</label>
-                                <input disabled class="disabled:bg-[#F7F7F7] h-10 border border-[#D8D8D8] rounded-md py-3 px-4 text-sm text-black-2 text-opacity-70 disabled:text-black disabled:text-opacity-[58%]" type="text" placeholder="Adeyemi" />
-                            </fieldset>
-                            <fieldset class="flex flex-col w-[47%]">
-                                <label class="text-sm leading-7 text-black text-opacity-[58%] mb-1">Mobile Number</label>
-                                <input class="disabled:bg-[#F7F7F7] h-10 border border-[#D8D8D8] rounded-md py-3 px-4 text-sm text-black-2 text-opacity-70 disabled:text-black disabled:text-opacity-[58%]" type="tel" placeholder="(414) 555-0132" />
-                            </fieldset>
-                            <fieldset class="flex flex-col w-[47%]">
-                                <label class="text-sm leading-7 text-black text-opacity-[58%] mb-1">Email</label>
-                                <input class="disabled:bg-[#F7F7F7] h-10 border border-[#D8D8D8] rounded-md py-3 px-4 text-sm text-black-2 text-opacity-70 disabled:text-black disabled:text-opacity-[58%]" type="email" placeholder="Holargrapher@gmail.com" />
-                            </fieldset>
-                            <fieldset class="flex flex-col w-[47%]">
-                                <label class="text-sm leading-7 text-black text-opacity-[58%] mb-1">LinkedIn Link</label>
-                                <input class="disabled:bg-[#F7F7F7] h-10 border border-[#D8D8D8] rounded-md py-3 px-4 text-sm text-black-2 text-opacity-70 disabled:text-black disabled:text-opacity-[58%]" type="url" placeholder="HTTPS://linkedin.com/AdeyemiSanusi" />
-                            </fieldset>
-                            <fieldset class="flex flex-col w-[47%]">
-                                <label class="text-sm leading-7 text-black text-opacity-[58%] mb-1">Gender</label>
-                                <input class="disabled:bg-[#F7F7F7] h-10 border border-[#D8D8D8] rounded-md py-3 px-4 text-sm text-black-2 text-opacity-70 disabled:text-black disabled:text-opacity-[58%]" type="text" placeholder="Male" />
-                            </fieldset>
+                        <form class="border-t border-[#A1A1A1] border-opacity-[39%] pt-8 px-3.5 xsm:px-7.5 mb-5">
+                            <div class="flex flex-wrap gap-y-6 gap-x-9">
+                                <fieldset class="flex-1 flex flex-col min-w-[47%] w-full">
+                                    <label class="text-sm leading-7 text-black text-opacity-[58%] mb-1">First Name</label>
+                                    <input disabled class="disabled:bg-[#F7F7F7] h-10 border border-[#D8D8D8] rounded-md py-3 px-4 text-sm text-black-2 text-opacity-70 disabled:text-black disabled:text-opacity-[58%]" type="text" placeholder="Adeyemi" />
+                                </fieldset>
+                                <fieldset class="flex-1 flex flex-col min-w-[47%] w-full">
+                                    <label class="text-sm leading-7 text-black text-opacity-[58%] mb-1">Last Name</label>
+                                    <input disabled class="disabled:bg-[#F7F7F7] h-10 border border-[#D8D8D8] rounded-md py-3 px-4 text-sm text-black-2 text-opacity-70 disabled:text-black disabled:text-opacity-[58%]" type="text" placeholder="Adeyemi" />
+                                </fieldset>
+                                <fieldset class="flex-1 flex flex-col min-w-[47%] w-full">
+                                    <label class="text-sm leading-7 text-black text-opacity-[58%] mb-1">Mobile Number</label>
+                                    <input class="disabled:bg-[#F7F7F7] h-10 border border-[#D8D8D8] rounded-md py-3 px-4 text-sm text-black-2 text-opacity-70 disabled:text-black disabled:text-opacity-[58%]" type="tel" placeholder="(414) 555-0132" />
+                                </fieldset>
+                                <fieldset class="flex-1 flex flex-col min-w-[47%] w-full">
+                                    <label class="text-sm leading-7 text-black text-opacity-[58%] mb-1">Email</label>
+                                    <input class="disabled:bg-[#F7F7F7] h-10 border border-[#D8D8D8] rounded-md py-3 px-4 text-sm text-black-2 text-opacity-70 disabled:text-black disabled:text-opacity-[58%]" type="email" placeholder="Holargrapher@gmail.com" />
+                                </fieldset>
+                                <fieldset class="flex-1 flex flex-col min-w-[47%] w-full">
+                                    <label class="text-sm leading-7 text-black text-opacity-[58%] mb-1">LinkedIn Link</label>
+                                    <input class="disabled:bg-[#F7F7F7] h-10 border border-[#D8D8D8] rounded-md py-3 px-4 text-sm text-black-2 text-opacity-70 disabled:text-black disabled:text-opacity-[58%]" type="url" placeholder="HTTPS://linkedin.com/AdeyemiSanusi" />
+                                </fieldset>
+                                <fieldset class="flex-1 flex flex-col min-w-[47%] w-full">
+                                    <label class="text-sm leading-7 text-black text-opacity-[58%] mb-1">Gender</label>
+                                    <input class="disabled:bg-[#F7F7F7] h-10 border border-[#D8D8D8] rounded-md py-3 px-4 text-sm text-black-2 text-opacity-70 disabled:text-black disabled:text-opacity-[58%]" type="text" placeholder="Male" />
+                                </fieldset>
+                            </div>
 
-                            <div class="mt-10 flex justify-end gap-3 leading-5 text-sm font-medium text-center">
-                                <button class="border border-brand-green bg-brand-green rounded-[3px] px-6 h-10 text-white filled-hover">
+                            <div class="mt-16 flex flex-wrap gap-3 leading-5 text-sm font-medium text-center">
+                                <button class="w-full max-w-[170px] py-2.5 border border-brand-green bg-brand-green rounded-[3px] text-white filled-hover">
                                     Update Changes
                                 </button>
 
-                                <button class="border border-brand-green bg-white rounded-[3px] px-12 h-10 text-brand-green outline-hover">
+                                <button class="w-full max-w-[170px] py-2.5 border border-brand-green bg-white rounded-[3px] text-brand-green outline-hover">
                                     Cancel
                                 </button>
                             </div>

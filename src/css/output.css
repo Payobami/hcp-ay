@@ -726,10 +726,6 @@ input, textarea, button{
   margin-bottom: 18px;
 }
 
-.mb-\[22px\]{
-  margin-bottom: 22px;
-}
-
 .mb-\[26px\]{
   margin-bottom: 26px;
 }
@@ -764,6 +760,14 @@ input, textarea, button{
 
 .mt-auto{
   margin-top: auto;
+}
+
+.mt-20{
+  margin-top: 5rem;
+}
+
+.mt-16{
+  margin-top: 4rem;
 }
 
 .block{
@@ -932,24 +936,12 @@ input, textarea, button{
   width: 100%;
 }
 
-.w-\[295px\]{
-  width: 295px;
-}
-
 .min-w-\[1025px\]{
   min-width: 1025px;
 }
 
-.min-w-\[295px\]{
-  min-width: 295px;
-}
-
-.min-w-\[250px\]{
-  min-width: 250px;
-}
-
-.max-w-\[295px\]{
-  max-width: 295px;
+.min-w-\[47\%\]{
+  min-width: 47%;
 }
 
 .max-w-\[600px\]{
@@ -960,8 +952,8 @@ input, textarea, button{
   max-width: 100%;
 }
 
-.max-w-\[300px\]{
-  max-width: 300px;
+.max-w-\[170px\]{
+  max-width: 170px;
 }
 
 .flex-1{
@@ -1365,11 +1357,6 @@ input, textarea, button{
   padding-bottom: 0.75rem;
 }
 
-.py-3\.5{
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
-}
-
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1398,6 +1385,11 @@ input, textarea, button{
 .py-\[9px\]{
   padding-top: 9px;
   padding-bottom: 9px;
+}
+
+.py-2\.5{
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 
 .pb-5{
@@ -2090,16 +2082,6 @@ input, textarea, button{
   }
 }
 
-@media (min-width: 525px){
-  .min-\[525px\]\:min-w-\[295px\]{
-    min-width: 295px;
-  }
-
-  .min-\[525px\]\:max-w-\[295px\]{
-    max-width: 295px;
-  }
-}
-
 @media (min-width: 576px){
   .xsm\:ml-8{
     margin-left: 2rem;
@@ -2109,20 +2091,12 @@ input, textarea, button{
     min-width: 295px;
   }
 
-  .xsm\:max-w-\[600px\]{
-    max-width: 600px;
-  }
-
-  .xsm\:max-w-\[650px\]{
-    max-width: 650px;
+  .xsm\:max-w-\[295px\]{
+    max-width: 295px;
   }
 
   .xsm\:max-w-\[620px\]{
     max-width: 620px;
-  }
-
-  .xsm\:max-w-\[295px\]{
-    max-width: 295px;
   }
 
   .xsm\:flex-row{
@@ -2201,10 +2175,6 @@ input, textarea, button{
     margin-left: auto;
     margin-right: auto;
   }
-
-  .sm\:justify-center{
-    justify-content: center;
-  }
 }
 
 @media (min-width: 768px){
@@ -2214,12 +2184,22 @@ input, textarea, button{
 }
 
 @media (min-width: 992px){
+  .lg\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .lg\:mb-6{
     margin-bottom: 1.5rem;
   }
 
   .lg\:mb-\[50px\]{
     margin-bottom: 50px;
+  }
+
+  .lg\:w-fit{
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .lg\:\!max-w-\[67\%\]{
@@ -2266,10 +2246,6 @@ input, textarea, button{
 
   .min-\[1320px\]\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .min-\[1320px\]\:justify-start{
-    justify-content: flex-start;
   }
 
   .min-\[1320px\]\:text-left{
