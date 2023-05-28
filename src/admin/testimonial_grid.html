@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Capital Partners E-Learning Platform - Integrated Admin Dashboard</title>
+    <link href="../css/output.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="font-poppins text-base font-normal relative">
+    <nav class="gradient-1 flex justify-between items-center px-6 xsm:px-10 lg:px-14 py-1.5 fixed top-0 z-60 w-full h-[60px]">
+        <div class="flex gap-3 items-center lg:gap-16">
+            <a><img src="../svg/logo.svg" /></a>
+            <img class="cursor-pointer" src="../svg/menu.svg" onclick="showSidebar(true)" />
+        </div>
+        <div class="flex gap-[7px] leading-5 items-center">
+            <div class="bg-white rounded-5 w-7 h-7 flex items-center justify-center">
+                <p>M</p>
+            </div>
+            <a class="text-white text-sm font-medium flex items-center gap-1.5">
+                <span class="hidden min-[410px]:inline">
+                    Admin@hcp.com
+                </span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <main id="main-el" class="flex mt-[60px] hide-sidebar">
+        <aside id="sidebar" class="sidebar z-50 bg-white h-full w-[260px] min-h-screen py-8 shadow-[5px_-5px_7px_rgba(0,0,0,0.08)] fixed left-0" id="sidebar">
+            <div class="mb-[26px] px-7">
+                <p class="text-mild-black text-lg mb-1 leading-7">Hi, Adeyemi Inc.</p>
+                <p class="text-[15px] font-light leading-5 text-grey-1">Admin@hcp.com</p>
+            </div>
+
+            <a class="py-[9px] mb-3.5 flex items-center pl-10 gap-3.5 text-brand-black text-[15px]" href="./dashboard.html">
+                <img src="../svg/grid.svg" />
+                Dashboard
+            </a>
+            <p class="px-7 text-13 text-[#858585] mb-2.5">User Management</p>
+            <div class="flex flex-col gap-[3px] text-[15px]">
+                <a class="flex items-center gap-3.5 py-[9px] pl-10" href="./customize.html">
+                    <img src="../svg/users.svg" />
+                    User
+                </a>
+                <a class="flex items-center gap-3.5 py-[9px] pl-10">
+                    <img src="../svg/users.svg" />
+                    Learning Group
+                </a>
+                <a class="flex items-center gap-3.5 py-[9px] pl-10" href="./manage-courses.html">
+                    <img src="../svg/course.svg" />
+                    Courses
+                </a>
+                <a class="flex items-center gap-3.5 py-[9px] pl-10" href="./create-course.html">
+                    <img src="../svg/course.svg" />
+                    Courses Categories
+                </a>
+                <a class="flex items-center gap-3.5 py-[9px] pl-10 active-dash">
+                    <img src="../svg/verified.svg" />
+                    Testimonials
+                </a>
+                <a class="flex items-center gap-3.5 py-[9px] pl-10">
+                    <img src="../svg/analytics.svg" />
+                    Reports
+                </a>
+                <a class="flex items-center gap-3.5 py-[9px] pl-10" href="./settings.html">
+                    <img src="../svg/settings.svg" />
+                    Settings
+                </a>
+                <a class="flex items-center gap-3.5 py-[9px] pl-10">
+                    <img src="../svg/users.svg" />
+                    Log Out
+                </a>
+            </div>
+        </aside>
+
+        <!-- In the calculation calc(100vh - 60px), 60px is the height of the fixed nav. This is done to even the height of the main screen to prevent unnecessary vertical overflows -->
+        <section id="main-content" class="ml-[260px] [&>div]:relative [&>div]:z-20 pt-9 px-3.5 xsm:px-7 flex-1 relative min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
+            <div class="">
+                <h4 class="uppercase text-brand-green leading-7 text-lg mb-4">Testimonial</h4>
+                <div class="bg-white border border-[#E2E2E2] shadow-[-5px_5px_25px_rgba(0,0,0,0.06)] rounded-10 py-[22px] mb-12">
+                    <h2 class="mb-2.5 text-black-2 tracking-wider leading-[38px] text-2xl font-semibold px-7 md:text-center min-[1320px]:text-left">Received Testimonials</h2>
+                    <div class="border-t border-[#A1A1A1] border-opacity-[39%] pt-8 px-4 xsm:px-7">
+                        <div class="grid min-[1320px]:grid-cols-2 gap-y-7 gap-x-6 mb-10">
+                            <div class="mx-auto w-full max-w-full xsm:max-w-[620px] px-5 py-[18px] rounded-md bg-white border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)]">
+                                <div class="flex flex-wrap lg:flex-nowrap gap-y-4 gap-x-16 justify-between items-center mb-6 max-[400px]:justify-center">
+                                    <div class="flex gap-2 items-center max-[400px]:flex-col max-[400px]:justify-center">
+                                        <img class="w-[70px] h-[70px]" src="../img/testimonials/1.png" />
+                                        <h5 class="font-bold text-sm leading-5 tracking-wider text-black-2">Anonymous</h5>
+                                    </div>
+    
+                                    <div class="mb-0 flex justify-end gap-3 leading-5 text-sm font-medium text-center flex-wrap xsm:flex-nowrap">
+                                        <button class="border border-brand-green bg-white rounded-[3px] w-[100px] h-9 text-brand-green">
+                                            Delete
+                                        </button>
+                                        <button class="border border-brand-green bg-brand-green rounded-[3px] w-[100px] h-9 text-white">
+                                            Publish
+                                        </button>
+                                    </div>
+                                </div>
+    
+                                <div class="text-sm">
+                                    <h6 class="leading-5 tracking-wider font-medium text-black-2 mb-2">Best Platform</h6>
+                                    <p class="leading-6 text-gray-700">The experience was lovely. The facilitators understood our pain points and communicated the solutions effectively. They showed excellent knowledge of the subject matter and carried all of us along. The result of the training is already evident in how I communicate at work.</p>
+                                </div>
+                            </div>
+                            <div class="mx-auto w-full max-w-full xsm:max-w-[620px] px-5 py-[18px] rounded-md bg-white border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)]">
+                                <div class="flex flex-wrap lg:flex-nowrap gap-y-4 gap-x-16 justify-between items-center mb-6 max-[400px]:justify-center">
+                                    <div class="flex gap-2 items-center max-[400px]:flex-col max-[400px]:justify-center">
+                                        <img class="w-[70px] h-[70px]" src="../img/testimonials/1.png" />
+                                        <h5 class="font-bold text-sm leading-5 tracking-wider text-black-2">Anonymous</h5>
+                                    </div>
+    
+                                    <div class="mb-0 flex justify-end gap-3 leading-5 text-sm font-medium text-center flex-wrap xsm:flex-nowrap">
+                                        <button class="border border-brand-green bg-white rounded-[3px] w-[100px] h-9 text-brand-green">
+                                            Delete
+                                        </button>
+                                        <button class="border border-brand-green bg-brand-green rounded-[3px] w-[100px] h-9 text-white">
+                                            Publish
+                                        </button>
+                                    </div>
+                                </div>
+    
+                                <div class="text-sm">
+                                    <h6 class="leading-5 tracking-wider font-medium text-black-2 mb-2">Best Platform</h6>
+                                    <p class="leading-6 text-gray-700">The experience was lovely. The facilitators understood our pain points and communicated the solutions effectively. They showed excellent knowledge of the subject matter and carried all of us along. The result of the training is already evident in how I communicate at work.</p>
+                                </div>
+                            </div>
+                            <div class="mx-auto w-full max-w-full xsm:max-w-[620px] px-5 py-[18px] rounded-md bg-white border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)]">
+                                <div class="flex flex-wrap lg:flex-nowrap gap-y-4 gap-x-16 justify-between items-center mb-6 max-[400px]:justify-center">
+                                    <div class="flex gap-2 items-center max-[400px]:flex-col max-[400px]:justify-center">
+                                        <img class="w-[70px] h-[70px]" src="../img/testimonials/1.png" />
+                                        <h5 class="font-bold text-sm leading-5 tracking-wider text-black-2">Anonymous</h5>
+                                    </div>
+    
+                                    <div class="mb-0 flex justify-end gap-3 leading-5 text-sm font-medium text-center flex-wrap xsm:flex-nowrap">
+                                        <button class="border border-brand-green bg-white rounded-[3px] w-[100px] h-9 text-brand-green">
+                                            Delete
+                                        </button>
+                                        <button class="border border-brand-green bg-brand-green rounded-[3px] w-[100px] h-9 text-white">
+                                            Publish
+                                        </button>
+                                    </div>
+                                </div>
+    
+                                <div class="text-sm">
+                                    <h6 class="leading-5 tracking-wider font-medium text-black-2 mb-2">Best Platform</h6>
+                                    <p class="leading-6 text-gray-700">The experience was lovely. The facilitators understood our pain points and communicated the solutions effectively. They showed excellent knowledge of the subject matter and carried all of us along. The result of the training is already evident in how I communicate at work.</p>
+                                </div>
+                            </div>
+                            <div class="mx-auto w-full max-w-full xsm:max-w-[620px] px-5 py-[18px] rounded-md bg-white border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)]">
+                                <div class="flex flex-wrap lg:flex-nowrap gap-y-4 gap-x-16 justify-between items-center mb-6 max-[400px]:justify-center">
+                                    <div class="flex gap-2 items-center max-[400px]:flex-col max-[400px]:justify-center">
+                                        <img class="w-[70px] h-[70px]" src="../img/testimonials/1.png" />
+                                        <h5 class="font-bold text-sm leading-5 tracking-wider text-black-2">Anonymous</h5>
+                                    </div>
+    
+                                    <div class="mb-0 flex justify-end gap-3 leading-5 text-sm font-medium text-center flex-wrap xsm:flex-nowrap">
+                                        <button class="border border-brand-green bg-white rounded-[3px] w-[100px] h-9 text-brand-green">
+                                            Delete
+                                        </button>
+                                        <button class="border border-brand-green bg-brand-green rounded-[3px] w-[100px] h-9 text-white">
+                                            Publish
+                                        </button>
+                                    </div>
+                                </div>
+    
+                                <div class="text-sm">
+                                    <h6 class="leading-5 tracking-wider font-medium text-black-2 mb-2">Best Platform</h6>
+                                    <p class="leading-6 text-gray-700">The experience was lovely. The facilitators understood our pain points and communicated the solutions effectively. They showed excellent knowledge of the subject matter and carried all of us along. The result of the training is already evident in how I communicate at work.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-5 flex-col xsm:gap-0 xsm:flex-row text-xs leading-[18px] w-fit mb-4 sm:mx-auto min-[1320px]:mx-0">
+                            <button class="w-fit px-5 h-7.5 border xsm:border-r-0 border-[#C4C4C4] rounded-5 xsm:rounded-r-none xsm:pl-3 py-1.5 xsm:pr-2 text-grey-1 hover:border-grey-1 hover:bg-grey-1 hover:text-white">
+                                Previous
+                            </button>
+                            <div class="flex">
+                                <a class="bg-brand-green w-7.5 h-7.5 text-white center-content">1</a>
+                                <a class="hover:border-brand-green hover:bg-brand-green hover:text-white border border-y border-l-0 border-[#C4C4C4] w-7.5 h-7.5 text-brand-green center-content">2</a>
+                                <a class="hover:border-brand-green hover:bg-brand-green hover:text-white border border-y border-l-0 border-[#C4C4C4] w-7.5 h-7.5 text-brand-green center-content">3</a>
+                                <a class="hover:border-brand-green hover:bg-brand-green hover:text-white border border-y border-l-0 border-[#C4C4C4] w-7.5 h-7.5 text-brand-green center-content">4</a>
+                                <a class="hover:border-brand-green hover:bg-brand-green hover:text-white border border-y border-l-0 border-[#C4C4C4] w-7.5 h-7.5 text-brand-green center-content">5</a>
+                                <a class="hover:border-grey-1 hover:bg-grey-1 hover:text-white border border-y border-l-0 border-[#C4C4C4] w-7.5 h-7.5 text-grey-1 center-content">...</a>
+                                <a class="hover:border-brand-green hover:bg-brand-green hover:text-white border border-y border-l-0 border-[#C4C4C4] w-7.5 h-7.5 text-brand-green center-content">23</a>
+                            </div>
+                            <button class="w-fit px-8 h-7.5 border xsm:border-l-0 border-[#C4C4C4] rounded-5 xsm:rounded-l-none xsm:pl-3 py-1.5 xsm:pr-5 text-brand-green hover:border-brand-green hover:bg-brand-green hover:text-white">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="../js/hcp.js"></script>
+</html>
