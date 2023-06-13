@@ -12,7 +12,7 @@ function viewModal(open) {
         modal.classList.add("show-modal")
         modal.classList.remove("hide-modal")
     } else {
-        modal.classList.add("hide-modal")
+        //modal.classList.add("hide-modal")
     }
 }
 
@@ -34,4 +34,8 @@ var headerQuill = new Quill('#header-editor', {
 
 var subTextQuill = new Quill('#subtext-editor', {
     theme: 'snow'
+});
+
+$(':radio').change(function () {
+    console.log('New star rating: ' + this.value);
 });

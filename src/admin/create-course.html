@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Human Capital Partners E-Learning Platform - Integrated Admin Dashboard</title>
     <link href="../css/output.css" rel="stylesheet" type="text/css" />
+    <link href="../../public/css/taginput.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body class="font-poppins text-base font-normal relative">
-    <nav class="gradient-1 flex justify-between items-center px-6 xsm:px-10 lg:px-14 py-1.5 fixed top-0 z-60 w-full h-[60px]">
+    <nav
+        class="gradient-1 flex justify-between items-center px-6 xsm:px-10 lg:px-14 py-1.5 fixed top-0 z-60 w-full h-[60px]">
         <div class="flex gap-3 items-center lg:gap-16">
             <a><img src="../svg/logo.svg" /></a>
             <img class="cursor-pointer" src="../svg/menu.svg" onclick="showSidebar(true)" />
@@ -21,21 +25,27 @@
                 <span class="hidden min-[410px]:inline">
                     Admin@hcp.com
                 </span>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502"
+                        stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </a>
         </div>
     </nav>
 
     <main id="main-el" class="flex mt-[60px] hide-sidebar">
-        <aside id="sidebar" class="sidebar z-50 bg-white h-full w-[260px] min-h-screen py-8 shadow-[5px_-5px_7px_rgba(0,0,0,0.08)] fixed left-0" id="sidebar">
+        <aside id="sidebar"
+            class="sidebar z-50 bg-white h-full w-[260px] min-h-screen py-8 shadow-[5px_-5px_7px_rgba(0,0,0,0.08)] fixed left-0"
+            id="sidebar">
             <div class="mb-[26px] px-7">
                 <p class="text-mild-black text-lg mb-1 leading-7">Hi, Adeyemi Inc.</p>
                 <p class="text-[15px] font-light leading-5 text-grey-1">Admin@hcp.com</p>
             </div>
 
-            <a class="py-[9px] mb-3.5 flex items-center pl-10 gap-3.5 text-brand-black text-[15px]" href="./dashboard.html">
+            <a class="py-[9px] mb-3.5 flex items-center pl-10 gap-3.5 text-brand-black text-[15px]"
+                href="./dashboard.html">
                 <img src="../svg/grid.svg" />
                 Dashboard
             </a>
@@ -77,56 +87,870 @@
         </aside>
 
         <!-- In the calculation calc(100vh - 60px), 60px is the height of the fixed nav. This is done to even the height of the main screen to prevent unnecessary vertical overflows -->
-        <section id="main-content" class="ml-[260px] [&>div]:relative [&>div]:z-20 pt-9 px-3.5 xsm:px-7 flex-1 relative w-full min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
+        <section id="main-content"
+            class="ml-[260px] [&>div]:relative [&>div]:z-20 pt-9 px-3.5 xsm:px-7 flex-1 relative w-full min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
             <div>
                 <a class="w-fit flex items-center gap-3 uppercase text-[#656972] text-xs leading-5 mb-[18px] group">
-                    <svg class="group-hover:scale-90 ease-in-out duration-300" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="fill-[#656972]" d="M14.5735 12.4849C14.7774 12.2731 15.1168 12.2731 15.3278 12.4849C15.5317 12.6896 15.5317 13.0303 15.3278 13.2345L11.5031 17.0742H24.1243C24.4185 17.0747 24.6523 17.3094 24.6523 17.6048C24.6523 17.9001 24.4185 18.1425 24.1243 18.1425H11.5031L15.3278 21.9751C15.5317 22.1869 15.5317 22.5281 15.3278 22.7323C15.1168 22.9442 14.777 22.9442 14.5735 22.7323L9.8433 17.9836C9.63226 17.7789 9.63226 17.4383 9.8433 17.234L14.5735 12.4849Z"/>
-                        <circle class="" cx="17.6086" cy="17.6086" r="16.7282" stroke="#656972" stroke-width="1.76086"/>
+                    <svg class="group-hover:scale-90 ease-in-out duration-300" width="36" height="36"
+                        viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fill-[#656972]"
+                            d="M14.5735 12.4849C14.7774 12.2731 15.1168 12.2731 15.3278 12.4849C15.5317 12.6896 15.5317 13.0303 15.3278 13.2345L11.5031 17.0742H24.1243C24.4185 17.0747 24.6523 17.3094 24.6523 17.6048C24.6523 17.9001 24.4185 18.1425 24.1243 18.1425H11.5031L15.3278 21.9751C15.5317 22.1869 15.5317 22.5281 15.3278 22.7323C15.1168 22.9442 14.777 22.9442 14.5735 22.7323L9.8433 17.9836C9.63226 17.7789 9.63226 17.4383 9.8433 17.234L14.5735 12.4849Z" />
+                        <circle class="" cx="17.6086" cy="17.6086" r="16.7282" stroke="#656972"
+                            stroke-width="1.76086" />
                     </svg>
                     Back
                 </a>
-                <div class="bg-white border border-[#E2E2E2] shadow-[-5px_5px_25px_rgba(0,0,0,0.06)] rounded-10 pt-3.5 pb-5">
-                    <h4 class="uppercase text-brand-green leading-7 text-lg mb-3 pl-8">Settings</h4>
-                    <div class="flex gap-7 border-t border-[#A1A1A1] border-opacity-[39%] pt-7 px-5 xsm:px-8 mb-40">
-                        <div class="max-w-[50%]">
-                            <h2 class="mb-7 text-black-2 tracking-wider leading-7 text-lg font-semibold">Add Course Details</h2>
-                            <form class="disabled-input-styles">
-                                <div class="flex gap-2">
-                                    <fieldset class="h-[35px] flex items-center">
-                                        <input class="h-full leading-5 placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-3 px-4 text-sm text-black-2 text-opacity-70" type="text" placeholder="Select Course Category" />
-                                        <button class="w-[54px] flex justify-center items-center h-full bg-[#DADADA] rounded-r-5">
-                                            <img src="../svg/select.svg" />
-                                        </button>
-                                    </fieldset>
-                                    <button class="text-sm leading-5 font-medium text-center px-3 py-1.5 border border-brand-green bg-brand-green rounded-[3px] text-white filled-hover">
+                <div
+                    class="bg-white border border-[#E2E2E2] shadow-[-5px_5px_25px_rgba(0,0,0,0.06)] rounded-10 pt-3.5 pb-5">
+                    <h4 class="uppercase text-brand-green leading-7 text-lg mb-3 pl-8">Create New Course</h4>
+
+                    <form>
+                        <div
+                            class="grid grid-cols-12 gap-20 border-t border-[#A1A1A1] border-opacity-[39%] pt-7 px-5 xsm:px-8 mb-40">
+                            <div class="col-span-6">
+                                <h2 class="mb-7 text-black-2 tracking-wider leading-7 text-lg font-semibold">Add Course
+                                    Details</h2>
+
+                                <div class="flex flex-row gap-2">
+                                    <div class="h-[35px] flex-0 items-center">
+                                        <select
+                                            class="w-full placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-2 px-4 text-black-2 text-opacity-70"
+                                            type="text" placeholder="Select Course Category">
+                                            <option>Select Course Category</option>
+                                        </select>
+                                    </div>
+                                    <button
+                                        class="text-sm flex-1 leading-5 font-medium text-center px-3 py-2 border border-brand-green bg-brand-green rounded-[3px] text-white filled-hover">
                                         + Add New Category
                                     </button>
                                 </div>
-                            </form>
-                        </div>
 
-                        <span class="block bg-[#A1A1A1] bg-opacity-10 w-1 h-full"></span>
+                                <div class="mt-5">
 
-                        <div class="max-w-[50%]">
-                            <h2 class="mb-7 text-black-2 tracking-wider leading-7 text-lg font-semibold">Set Course Parameters</h2>
-                            <form class="disabled-input-styles">
-                                <div class="flex gap-2">
-                                    <fieldset class="h-[35px] flex items-center">
-                                        <input class="w-[250px] h-full leading-5 placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-3 px-4 text-sm text-black-2 text-opacity-70" type="text" placeholder="Select Course Category" />
-                                        <button class="w-[54px] flex justify-center items-center h-full bg-[#DADADA] rounded-r-5">
-                                            <img src="../svg/select.svg" />
-                                        </button>
-                                    </fieldset>
+                                    <select
+                                        class="w-full placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-2 px-4 text-black-2 text-opacity-70"
+                                        type="text">
+                                        <option>Select Course Type</option>
+                                    </select>
                                 </div>
-                            </form>
+
+                                <div class="mt-5">
+                                    <input
+                                        class="w-full placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-2 px-4 text-black-2 text-opacity-70"
+                                        type="text" placeholder="Enter Course Title" />
+                                </div>
+
+                                <div class="mt-5">
+                                    <label class="text-gray-500">Upload Course Photo</label>
+                                    <input type="file"
+                                        class="w-full placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-2 px-4 text-black-2 text-opacity-70"
+                                        type="text" placeholder="Upload Course Photo." />
+                                </div>
+
+                                <div class="mt-5">
+                                    <label class="text-gray-500">Synopsis</label>
+                                    <textarea
+                                        class="w-full placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-2 px-4 text-black-2 text-opacity-70"
+                                        rows="4">Enter brief synopsis of course (max characters 100)</textarea>
+                                </div>
+
+                                <div class="mt-5">
+                                    <div>
+                                        <label class="block text-xs text-blue-500 mb-4" style="color: #091963">You can
+                                            create a maximum of 10 Topics at once by entering a name and adding
+                                            it.</label>
+                                        <input class="w-full" value="Arcu, Mi odio nec, Mi odio nec., Consequat.,"
+                                            type="text" value="" data-role="tagsinput" placeholder="Add tags" />
+                                    </div>
+                                </div>
+
+                                <div class="mt-5">
+                                    <textarea
+                                        class="w-full placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-2 px-4 text-black-2 text-opacity-70"
+                                        rows="4">Add a course description (Max 500 characters)</textarea>
+                                </div>
+
+                                <div class="mt-5">
+                                    <label>Set course price</label>
+                                    <div class="flex flex-row mt-4">
+                                        <div class="px-3 py-2 border rounded-tr-md"
+                                            style="background-color: #d2d2d2; border-radius: 5px 0px 0px 5px ;">NGN
+                                        </div>
+                                        <input class="border px-2 py-2 w-full" />
+                                        <div class="px-3 py-2 border"
+                                            style="background-color: #d2d2d2; border-radius: 0 5px 5px 0;">.00</div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-12 flex gap-5">
+                                    <button
+                                        class="text-sm leading-5 font-medium text-center px-10 py-2 border border-brand-green bg-brand-green rounded-[3px] text-white filled-hover">
+                                        Next
+                                    </button>
+
+                                    <button
+                                        class="text-sm leading-5 font-medium text-center px-10 py-2 border border-brand-green text-brand-green rounded-[3px] filled-hover">
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- <span class="block bg-[#A1A1A1] bg-opacity-10 w-1 h-full"></span> -->
+
+                            <div class="col-span-6 max-w-[50%]xx">
+                                <h2 class="mb-7 text-black-2 tracking-wider leading-7 text-lg font-semibold">Set Course
+                                    Parameters</h2>
+
+                                <div class="">
+                                    <div class="h-[35px] items-center">
+                                        <input
+                                            class="w-full h-full leading-5 placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-3 px-4 text-sm text-black-2 text-opacity-70"
+                                            type="number" placeholder="Set Passmark (50 - 100)" />
+                                    </div>
+                                </div>
+
+                                <div class="mt-3">
+                                    <div class="h-[35px] items-center">
+                                        <input
+                                            class="w-full h-full leading-5 placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-3 px-4 text-sm text-black-2 text-opacity-70"
+                                            type="number" placeholder="Set Course Retake (1 - 3)" />
+                                    </div>
+                                </div>
+
+                                <div class="mt-3">
+                                    <div class="h-[35px] items-center">
+                                        <input
+                                            class="w-full h-full leading-5 placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-3 px-4 text-sm text-black-2 text-opacity-70"
+                                            type="number" placeholder="Set Quiz Attempt (1 - 3)" />
+                                    </div>
+                                </div>
+
+                                <div class="mt-3">
+                                    <div class=" items-center">
+                                        <input
+                                            class="w-full h-full leading-5 placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-3 px-4 text-sm text-black-2 text-opacity-70"
+                                            type="number" placeholder="Set Course Reminder" />
+                                    </div>
+                                </div>
+
+                                <h5 class="mt-10 mb-5">What you’ll learn Parameters</h5>
+
+                                <div class="mt-3">
+                                    <div class="">
+                                        <label>Bullet 1</label>
+                                        <textarea
+                                            class="h-full w-full leading-5 placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-3 px-4 text-sm text-black-2 text-opacity-70">Enter what they’d learn (max 100 Characters) </textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-3">
+                                    <div class="">
+                                        <label>Bullet 2</label>
+                                        <textarea
+                                            class="h-full w-full leading-5 placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-3 px-4 text-sm text-black-2 text-opacity-70">Enter what they’d learn (max 100 Characters) </textarea>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <div class="">
+                                        <label>Bullet 3</label>
+                                        <textarea
+                                            class="h-full w-full leading-5 placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-3 px-4 text-sm text-black-2 text-opacity-70">Enter what they’d learn (max 100 Characters) </textarea>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <div class="">
+                                        <label>Bullet 4</label>
+                                        <textarea
+                                            class="h-full w-full leading-5 placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-3 px-4 text-sm text-black-2 text-opacity-70">Enter what they’d learn (max 100 Characters) </textarea>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <div class="">
+                                        <label>Bullet 5</label>
+                                        <textarea
+                                            class="h-full w-full leading-5 placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-3 px-4 text-sm text-black-2 text-opacity-70">Enter what they’d learn (max 100 Characters) </textarea>
+                                    </div>
+                                </div>
+
+                                <div class="mt-5">
+                                    <div class="">
+                                        <label>Bullet 6</label>
+                                        <textarea
+                                            class="h-full w-full leading-5 placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-3 px-4 text-sm text-black-2 text-opacity-70">Enter what they’d learn (max 100 Characters) </textarea>
+                                    </div>
+                                </div>
+
+                                <div class="mt-5">
+                                    <div class="">
+                                        <label>Bullet 7</label>
+                                        <textarea
+                                            class="h-full w-full leading-5 placeholder:text-[#57584F] placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 rounded-l-[3px] py-3 px-4 text-sm text-black-2 text-opacity-70">Enter what they’d learn (max 100 Characters) </textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
-                        
-                    </div>
+
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 </body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
 <script src="../js/hcp.js"></script>
+
+<script type="text/javascript">
+    // bootstrap-tagsinput.js file - add in local
+
+    (function ($) {
+        "use strict";
+
+        var defaultOptions = {
+            tagClass: function (item) {
+                return 'label label-info';
+            },
+            itemValue: function (item) {
+                return item ? item.toString() : item;
+            },
+            itemText: function (item) {
+                return this.itemValue(item);
+            },
+            itemTitle: function (item) {
+                return null;
+            },
+            freeInput: true,
+            addOnBlur: true,
+            maxTags: undefined,
+            maxChars: undefined,
+            confirmKeys: [13, 44],
+            delimiter: ',',
+            delimiterRegex: null,
+            cancelConfirmKeysOnEmpty: true,
+            onTagExists: function (item, $tag) {
+                $tag.hide().fadeIn();
+            },
+            trimValue: false,
+            allowDuplicates: false
+        };
+
+        /**
+         * Constructor function
+         */
+        function TagsInput(element, options) {
+            this.itemsArray = [];
+
+            this.$element = $(element);
+            this.$element.hide();
+
+            this.isSelect = (element.tagName === 'SELECT');
+            this.multiple = (this.isSelect && element.hasAttribute('multiple'));
+            this.objectItems = options && options.itemValue;
+            this.placeholderText = element.hasAttribute('placeholder') ? this.$element.attr('placeholder') : '';
+            this.inputSize = Math.max(1, this.placeholderText.length);
+
+            this.$container = $('<div class="bootstrap-tagsinput"></div>');
+            this.$input = $('<input type="text" placeholder="' + this.placeholderText + '"/>').appendTo(this.$container);
+
+            this.$element.before(this.$container);
+
+            this.build(options);
+        }
+
+        TagsInput.prototype = {
+            constructor: TagsInput,
+
+            /**
+             * Adds the given item as a new tag. Pass true to dontPushVal to prevent
+             * updating the elements val()
+             */
+            add: function (item, dontPushVal, options) {
+                var self = this;
+
+                if (self.options.maxTags && self.itemsArray.length >= self.options.maxTags)
+                    return;
+
+                // Ignore falsey values, except false
+                if (item !== false && !item)
+                    return;
+
+                // Trim value
+                if (typeof item === "string" && self.options.trimValue) {
+                    item = $.trim(item);
+                }
+
+                // Throw an error when trying to add an object while the itemValue option was not set
+                if (typeof item === "object" && !self.objectItems)
+                    throw ("Can't add objects when itemValue option is not set");
+
+                // Ignore strings only containg whitespace
+                if (item.toString().match(/^\s*$/))
+                    return;
+
+                // If SELECT but not multiple, remove current tag
+                if (self.isSelect && !self.multiple && self.itemsArray.length > 0)
+                    self.remove(self.itemsArray[0]);
+
+                if (typeof item === "string" && this.$element[0].tagName === 'INPUT') {
+                    var delimiter = (self.options.delimiterRegex) ? self.options.delimiterRegex : self.options.delimiter;
+                    var items = item.split(delimiter);
+                    if (items.length > 1) {
+                        for (var i = 0; i < items.length; i++) {
+                            this.add(items[i], true);
+                        }
+
+                        if (!dontPushVal)
+                            self.pushVal();
+                        return;
+                    }
+                }
+
+                var itemValue = self.options.itemValue(item),
+                    itemText = self.options.itemText(item),
+                    tagClass = self.options.tagClass(item),
+                    itemTitle = self.options.itemTitle(item);
+
+                // Ignore items allready added
+                var existing = $.grep(self.itemsArray, function (item) { return self.options.itemValue(item) === itemValue; })[0];
+                if (existing && !self.options.allowDuplicates) {
+                    // Invoke onTagExists
+                    if (self.options.onTagExists) {
+                        var $existingTag = $(".tag", self.$container).filter(function () { return $(this).data("item") === existing; });
+                        self.options.onTagExists(item, $existingTag);
+                    }
+                    return;
+                }
+
+                // if length greater than limit
+                if (self.items().toString().length + item.length + 1 > self.options.maxInputLength)
+                    return;
+
+                // raise beforeItemAdd arg
+                var beforeItemAddEvent = $.Event('beforeItemAdd', { item: item, cancel: false, options: options });
+                self.$element.trigger(beforeItemAddEvent);
+                if (beforeItemAddEvent.cancel)
+                    return;
+
+                // register item in internal array and map
+                self.itemsArray.push(item);
+
+                // add a tag element
+
+                var $tag = $('<span class="tag ' + htmlEncode(tagClass) + (itemTitle !== null ? ('" title="' + itemTitle) : '') + '">' + htmlEncode(itemText) + '<span data-role="remove"></span></span>');
+                $tag.data('item', item);
+                self.findInputWrapper().before($tag);
+                $tag.after(' ');
+
+                // add <option /> if item represents a value not present in one of the <select />'s options
+                if (self.isSelect && !$('option[value="' + encodeURIComponent(itemValue) + '"]', self.$element)[0]) {
+                    var $option = $('<option selected>' + htmlEncode(itemText) + '</option>');
+                    $option.data('item', item);
+                    $option.attr('value', itemValue);
+                    self.$element.append($option);
+                }
+
+                if (!dontPushVal)
+                    self.pushVal();
+
+                // Add class when reached maxTags
+                if (self.options.maxTags === self.itemsArray.length || self.items().toString().length === self.options.maxInputLength)
+                    self.$container.addClass('bootstrap-tagsinput-max');
+
+                self.$element.trigger($.Event('itemAdded', { item: item, options: options }));
+            },
+
+            /**
+             * Removes the given item. Pass true to dontPushVal to prevent updating the
+             * elements val()
+             */
+            remove: function (item, dontPushVal, options) {
+                var self = this;
+
+                if (self.objectItems) {
+                    if (typeof item === "object")
+                        item = $.grep(self.itemsArray, function (other) { return self.options.itemValue(other) == self.options.itemValue(item); });
+                    else
+                        item = $.grep(self.itemsArray, function (other) { return self.options.itemValue(other) == item; });
+
+                    item = item[item.length - 1];
+                }
+
+                if (item) {
+                    var beforeItemRemoveEvent = $.Event('beforeItemRemove', { item: item, cancel: false, options: options });
+                    self.$element.trigger(beforeItemRemoveEvent);
+                    if (beforeItemRemoveEvent.cancel)
+                        return;
+
+                    $('.tag', self.$container).filter(function () { return $(this).data('item') === item; }).remove();
+                    $('option', self.$element).filter(function () { return $(this).data('item') === item; }).remove();
+                    if ($.inArray(item, self.itemsArray) !== -1)
+                        self.itemsArray.splice($.inArray(item, self.itemsArray), 1);
+                }
+
+                if (!dontPushVal)
+                    self.pushVal();
+
+                // Remove class when reached maxTags
+                if (self.options.maxTags > self.itemsArray.length)
+                    self.$container.removeClass('bootstrap-tagsinput-max');
+
+                self.$element.trigger($.Event('itemRemoved', { item: item, options: options }));
+            },
+
+            /**
+             * Removes all items
+             */
+            removeAll: function () {
+                var self = this;
+
+                $('.tag', self.$container).remove();
+                $('option', self.$element).remove();
+
+                while (self.itemsArray.length > 0)
+                    self.itemsArray.pop();
+
+                self.pushVal();
+            },
+
+            /**
+             * Refreshes the tags so they match the text/value of their corresponding
+             * item.
+             */
+            refresh: function () {
+                var self = this;
+                $('.tag', self.$container).each(function () {
+                    var $tag = $(this),
+                        item = $tag.data('item'),
+                        itemValue = self.options.itemValue(item),
+                        itemText = self.options.itemText(item),
+                        tagClass = self.options.tagClass(item);
+
+                    // Update tag's class and inner text
+                    $tag.attr('class', null);
+                    $tag.addClass('tag ' + htmlEncode(tagClass));
+                    $tag.contents().filter(function () {
+                        return this.nodeType == 3;
+                    })[0].nodeValue = htmlEncode(itemText);
+
+                    if (self.isSelect) {
+                        var option = $('option', self.$element).filter(function () { return $(this).data('item') === item; });
+                        option.attr('value', itemValue);
+                    }
+                });
+            },
+
+            /**
+             * Returns the items added as tags
+             */
+            items: function () {
+                return this.itemsArray;
+            },
+
+            /**
+             * Assembly value by retrieving the value of each item, and set it on the
+             * element.
+             */
+            pushVal: function () {
+                var self = this,
+                    val = $.map(self.items(), function (item) {
+                        return self.options.itemValue(item).toString();
+                    });
+
+                self.$element.val(val, true).trigger('change');
+            },
+
+            /**
+             * Initializes the tags input behaviour on the element
+             */
+            build: function (options) {
+                var self = this;
+
+                self.options = $.extend({}, defaultOptions, options);
+                // When itemValue is set, freeInput should always be false
+                if (self.objectItems)
+                    self.options.freeInput = false;
+
+                makeOptionItemFunction(self.options, 'itemValue');
+                makeOptionItemFunction(self.options, 'itemText');
+                makeOptionFunction(self.options, 'tagClass');
+
+                // Typeahead Bootstrap version 2.3.2
+                if (self.options.typeahead) {
+                    var typeahead = self.options.typeahead || {};
+
+                    makeOptionFunction(typeahead, 'source');
+
+                    self.$input.typeahead($.extend({}, typeahead, {
+                        source: function (query, process) {
+                            function processItems(items) {
+                                var texts = [];
+
+                                for (var i = 0; i < items.length; i++) {
+                                    var text = self.options.itemText(items[i]);
+                                    map[text] = items[i];
+                                    texts.push(text);
+                                }
+                                process(texts);
+                            }
+
+                            this.map = {};
+                            var map = this.map,
+                                data = typeahead.source(query);
+
+                            if ($.isFunction(data.success)) {
+                                // support for Angular callbacks
+                                data.success(processItems);
+                            } else if ($.isFunction(data.then)) {
+                                // support for Angular promises
+                                data.then(processItems);
+                            } else {
+                                // support for functions and jquery promises
+                                $.when(data)
+                                    .then(processItems);
+                            }
+                        },
+                        updater: function (text) {
+                            self.add(this.map[text]);
+                            return this.map[text];
+                        },
+                        matcher: function (text) {
+                            return (text.toLowerCase().indexOf(this.query.trim().toLowerCase()) !== -1);
+                        },
+                        sorter: function (texts) {
+                            return texts.sort();
+                        },
+                        highlighter: function (text) {
+                            var regex = new RegExp('(' + this.query + ')', 'gi');
+                            return text.replace(regex, "<strong>$1</strong>");
+                        }
+                    }));
+                }
+
+                // typeahead.js
+                if (self.options.typeaheadjs) {
+                    var typeaheadConfig = null;
+                    var typeaheadDatasets = {};
+
+                    // Determine if main configurations were passed or simply a dataset
+                    var typeaheadjs = self.options.typeaheadjs;
+                    if ($.isArray(typeaheadjs)) {
+                        typeaheadConfig = typeaheadjs[0];
+                        typeaheadDatasets = typeaheadjs[1];
+                    } else {
+                        typeaheadDatasets = typeaheadjs;
+                    }
+
+                    self.$input.typeahead(typeaheadConfig, typeaheadDatasets).on('typeahead:selected', $.proxy(function (obj, datum) {
+                        if (typeaheadDatasets.valueKey)
+                            self.add(datum[typeaheadDatasets.valueKey]);
+                        else
+                            self.add(datum);
+                        self.$input.typeahead('val', '');
+                    }, self));
+                }
+
+                self.$container.on('click', $.proxy(function (event) {
+                    if (!self.$element.attr('disabled')) {
+                        self.$input.removeAttr('disabled');
+                    }
+                    self.$input.focus();
+                }, self));
+
+                if (self.options.addOnBlur && self.options.freeInput) {
+                    self.$input.on('focusout', $.proxy(function (event) {
+                        // HACK: only process on focusout when no typeahead opened, to
+                        //       avoid adding the typeahead text as tag
+                        if ($('.typeahead, .twitter-typeahead', self.$container).length === 0) {
+                            self.add(self.$input.val());
+                            self.$input.val('');
+                        }
+                    }, self));
+                }
+
+
+                self.$container.on('keydown', 'input', $.proxy(function (event) {
+                    var $input = $(event.target),
+                        $inputWrapper = self.findInputWrapper();
+
+                    if (self.$element.attr('disabled')) {
+                        self.$input.attr('disabled', 'disabled');
+                        return;
+                    }
+
+                    switch (event.which) {
+                        // BACKSPACE
+                        case 8:
+                            if (doGetCaretPosition($input[0]) === 0) {
+                                var prev = $inputWrapper.prev();
+                                if (prev.length) {
+                                    self.remove(prev.data('item'));
+                                }
+                            }
+                            break;
+
+                        // DELETE
+                        case 46:
+                            if (doGetCaretPosition($input[0]) === 0) {
+                                var next = $inputWrapper.next();
+                                if (next.length) {
+                                    self.remove(next.data('item'));
+                                }
+                            }
+                            break;
+
+                        // LEFT ARROW
+                        case 37:
+                            // Try to move the input before the previous tag
+                            var $prevTag = $inputWrapper.prev();
+                            if ($input.val().length === 0 && $prevTag[0]) {
+                                $prevTag.before($inputWrapper);
+                                $input.focus();
+                            }
+                            break;
+                        // RIGHT ARROW
+                        case 39:
+                            // Try to move the input after the next tag
+                            var $nextTag = $inputWrapper.next();
+                            if ($input.val().length === 0 && $nextTag[0]) {
+                                $nextTag.after($inputWrapper);
+                                $input.focus();
+                            }
+                            break;
+                        default:
+                        // ignore
+                    }
+
+                    // Reset internal input's size
+                    var textLength = $input.val().length,
+                        wordSpace = Math.ceil(textLength / 5),
+                        size = textLength + wordSpace + 1;
+                    $input.attr('size', Math.max(this.inputSize, $input.val().length));
+                }, self));
+
+                self.$container.on('keypress', 'input', $.proxy(function (event) {
+                    var $input = $(event.target);
+
+                    if (self.$element.attr('disabled')) {
+                        self.$input.attr('disabled', 'disabled');
+                        return;
+                    }
+
+                    var text = $input.val(),
+                        maxLengthReached = self.options.maxChars && text.length >= self.options.maxChars;
+                    if (self.options.freeInput && (keyCombinationInList(event, self.options.confirmKeys) || maxLengthReached)) {
+                        // Only attempt to add a tag if there is data in the field
+                        if (text.length !== 0) {
+                            self.add(maxLengthReached ? text.substr(0, self.options.maxChars) : text);
+                            $input.val('');
+                        }
+
+                        // If the field is empty, let the event triggered fire as usual
+                        if (self.options.cancelConfirmKeysOnEmpty === false) {
+                            event.preventDefault();
+                        }
+                    }
+
+                    // Reset internal input's size
+                    var textLength = $input.val().length,
+                        wordSpace = Math.ceil(textLength / 5),
+                        size = textLength + wordSpace + 1;
+                    $input.attr('size', Math.max(this.inputSize, $input.val().length));
+                }, self));
+
+                // Remove icon clicked
+                self.$container.on('click', '[data-role=remove]', $.proxy(function (event) {
+                    if (self.$element.attr('disabled')) {
+                        return;
+                    }
+                    self.remove($(event.target).closest('.tag').data('item'));
+                }, self));
+
+                // Only add existing value as tags when using strings as tags
+                if (self.options.itemValue === defaultOptions.itemValue) {
+                    if (self.$element[0].tagName === 'INPUT') {
+                        self.add(self.$element.val());
+                    } else {
+                        $('option', self.$element).each(function () {
+                            self.add($(this).attr('value'), true);
+                        });
+                    }
+                }
+            },
+
+            /**
+             * Removes all tagsinput behaviour and unregsiter all event handlers
+             */
+            destroy: function () {
+                var self = this;
+
+                // Unbind events
+                self.$container.off('keypress', 'input');
+                self.$container.off('click', '[role=remove]');
+
+                self.$container.remove();
+                self.$element.removeData('tagsinput');
+                self.$element.show();
+            },
+
+            /**
+             * Sets focus on the tagsinput
+             */
+            focus: function () {
+                this.$input.focus();
+            },
+
+            /**
+             * Returns the internal input element
+             */
+            input: function () {
+                return this.$input;
+            },
+
+            /**
+             * Returns the element which is wrapped around the internal input. This
+             * is normally the $container, but typeahead.js moves the $input element.
+             */
+            findInputWrapper: function () {
+                var elt = this.$input[0],
+                    container = this.$container[0];
+                while (elt && elt.parentNode !== container)
+                    elt = elt.parentNode;
+
+                return $(elt);
+            }
+        };
+
+        /**
+         * Register JQuery plugin
+         */
+        $.fn.tagsinput = function (arg1, arg2, arg3) {
+            var results = [];
+
+            this.each(function () {
+                var tagsinput = $(this).data('tagsinput');
+                // Initialize a new tags input
+                if (!tagsinput) {
+                    tagsinput = new TagsInput(this, arg1);
+                    $(this).data('tagsinput', tagsinput);
+                    results.push(tagsinput);
+
+                    if (this.tagName === 'SELECT') {
+                        $('option', $(this)).attr('selected', 'selected');
+                    }
+
+                    // Init tags from $(this).val()
+                    $(this).val($(this).val());
+                } else if (!arg1 && !arg2) {
+                    // tagsinput already exists
+                    // no function, trying to init
+                    results.push(tagsinput);
+                } else if (tagsinput[arg1] !== undefined) {
+                    // Invoke function on existing tags input
+                    if (tagsinput[arg1].length === 3 && arg3 !== undefined) {
+                        var retVal = tagsinput[arg1](arg2, null, arg3);
+                    } else {
+                        var retVal = tagsinput[arg1](arg2);
+                    }
+                    if (retVal !== undefined)
+                        results.push(retVal);
+                }
+            });
+
+            if (typeof arg1 == 'string') {
+                // Return the results from the invoked function calls
+                return results.length > 1 ? results : results[0];
+            } else {
+                return results;
+            }
+        };
+
+        $.fn.tagsinput.Constructor = TagsInput;
+
+        /**
+         * Most options support both a string or number as well as a function as
+         * option value. This function makes sure that the option with the given
+         * key in the given options is wrapped in a function
+         */
+        function makeOptionItemFunction(options, key) {
+            if (typeof options[key] !== 'function') {
+                var propertyName = options[key];
+                options[key] = function (item) { return item[propertyName]; };
+            }
+        }
+        function makeOptionFunction(options, key) {
+            if (typeof options[key] !== 'function') {
+                var value = options[key];
+                options[key] = function () { return value; };
+            }
+        }
+        /**
+         * HtmlEncodes the given value
+         */
+        var htmlEncodeContainer = $('<div />');
+        function htmlEncode(value) {
+            if (value) {
+                return htmlEncodeContainer.text(value).html();
+            } else {
+                return '';
+            }
+        }
+
+        /**
+         * Returns the position of the caret in the given input field
+         * http://flightschool.acylt.com/devnotes/caret-position-woes/
+         */
+        function doGetCaretPosition(oField) {
+            var iCaretPos = 0;
+            if (document.selection) {
+                oField.focus();
+                var oSel = document.selection.createRange();
+                oSel.moveStart('character', -oField.value.length);
+                iCaretPos = oSel.text.length;
+            } else if (oField.selectionStart || oField.selectionStart == '0') {
+                iCaretPos = oField.selectionStart;
+            }
+            return (iCaretPos);
+        }
+
+        /**
+          * Returns boolean indicates whether user has pressed an expected key combination.
+          * @param object keyPressEvent: JavaScript event object, refer
+          *     http://www.w3.org/TR/2003/WD-DOM-Level-3-Events-20030331/ecma-script-binding.html
+          * @param object lookupList: expected key combinations, as in:
+          *     [13, {which: 188, shiftKey: true}]
+          */
+        function keyCombinationInList(keyPressEvent, lookupList) {
+            var found = false;
+            $.each(lookupList, function (index, keyCombination) {
+                if (typeof (keyCombination) === 'number' && keyPressEvent.which === keyCombination) {
+                    found = true;
+                    return false;
+                }
+
+                if (keyPressEvent.which === keyCombination.which) {
+                    var alt = !keyCombination.hasOwnProperty('altKey') || keyPressEvent.altKey === keyCombination.altKey,
+                        shift = !keyCombination.hasOwnProperty('shiftKey') || keyPressEvent.shiftKey === keyCombination.shiftKey,
+                        ctrl = !keyCombination.hasOwnProperty('ctrlKey') || keyPressEvent.ctrlKey === keyCombination.ctrlKey;
+                    if (alt && shift && ctrl) {
+                        found = true;
+                        return false;
+                    }
+                }
+            });
+
+            return found;
+        }
+
+        /**
+         * Initialize tagsinput behaviour on inputs and selects which have
+         * data-role=tagsinput
+         */
+        $(function () {
+            $("input[data-role=tagsinput], select[multiple][data-role=tagsinput]").tagsinput();
+        });
+    })(window.jQuery);
+
+</script>
+
 </html>

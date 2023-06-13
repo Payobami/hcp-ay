@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Human Capital Partners E-Learning Platform - Integrated Admin Dashboard</title>
     <link href="../css/output.css" rel="stylesheet" type="text/css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body class="font-poppins text-base font-normal relative">
-    <nav class="gradient-1 flex justify-between items-center px-6 xsm:px-10 lg:px-14 py-1.5 fixed top-0 z-60 w-full h-[60px]">
+    <nav
+        class="gradient-1 flex justify-between items-center px-6 xsm:px-10 lg:px-14 py-1.5 fixed top-0 z-60 w-full h-[60px]">
         <div class="flex gap-3 items-center lg:gap-16">
             <a><img src="../svg/logo.svg" /></a>
             <img class="cursor-pointer" src="../svg/menu.svg" onclick="showSidebar(true)" />
@@ -21,15 +25,19 @@
                 <span class="hidden min-[410px]:inline">
                     Adeyemi Sanusi
                 </span>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502"
+                        stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </a>
         </div>
     </nav>
 
     <main id="main-el" class="flex mt-[60px] hide-sidebar">
-        <aside id="sidebar" class="sidebar z-50 bg-white h-full w-[260px] min-h-screen py-8 shadow-[5px_-5px_7px_rgba(0,0,0,0.08)] fixed left-0">
+        <aside id="sidebar"
+            class="sidebar z-50 bg-white h-full w-[260px] min-h-screen py-8 shadow-[5px_-5px_7px_rgba(0,0,0,0.08)] fixed left-0">
             <div class="mb-[26px] px-7">
                 <p class="text-mild-black text-lg mb-1 leading-7">Hi, Adeyemi Inc.</p>
                 <p class="text-[15px] font-light leading-5 text-grey-1">Adeyemi@gmail.com</p>
@@ -60,25 +68,33 @@
         </aside>
 
         <!-- In the calculation calc(100vh - 60px), 60px is the height of the fixed nav. This is done to even the height of the main screen to prevent unnecessary vertical overflows -->
-        <section id="main-content" class="ml-[260px] [&>div]:relative [&>div]:z-20 pt-9 px-3.5 xsm:px-7 flex-1 relative w-full min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
+        <section id="main-content"
+            class="ml-[260px] [&>div]:relative [&>div]:z-20 pt-9 px-3.5 xsm:px-7 flex-1 relative w-full min-h-[calc(100vh-60px)] before:w-full before:h-[64%] before:bg-dash-blue before:absolute before:top-0 before:left-0 before:z-10">
             <div>
                 <h4 class="uppercase text-brand-green leading-7 text-lg mb-4">Settings</h4>
-                <div class="bg-white border border-[#E2E2E2] shadow-[-5px_5px_25px_rgba(0,0,0,0.06)] rounded-10 py-[22px]">
-                    <h2 class="mb-2.5 text-black-2 tracking-wider leading-[38px] text-2xl font-semibold px-5 xsm:px-9">Account Settings</h2>
-                    <div class="flex max-[525px]:flex-col flex-wrap gap-9 border-t border-[#A1A1A1] border-opacity-[39%] pt-10 px-5 xsm:px-9 mb-40">
-                        <button class="w-full flex-1 xsm:min-w-[295px] xsm:max-w-[295px] text-left flex flex-wrap xsm:flex-nowrap gap-6 items-center px-4 xsm:px-7 py-4 bg-[#F3F3F3] rounded-5 border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)] hover:bg-opacity-50">
+                <div
+                    class="bg-white border border-[#E2E2E2] shadow-[-5px_5px_25px_rgba(0,0,0,0.06)] rounded-10 py-[22px]">
+                    <h2 class="mb-2.5 text-black-2 tracking-wider leading-[38px] text-2xl font-semibold px-5 xsm:px-9">
+                        Account Settings</h2>
+                    <div
+                        class="flex max-[525px]:flex-col flex-wrap gap-9 border-t border-[#A1A1A1] border-opacity-[39%] pt-10 px-5 xsm:px-9 mb-40">
+                        <button
+                            class="w-full flex-1 xsm:min-w-[295px] xsm:max-w-[295px] text-left flex flex-wrap xsm:flex-nowrap gap-6 items-center px-4 xsm:px-7 py-4 bg-[#F3F3F3] rounded-5 border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)] hover:bg-opacity-50">
                             <img class="" src="../svg/user.svg" />
                             <div class="tracking-wider leading-5 text-black-2">
                                 <h4 class="font-medium text-sm leading-5 mb-1">My Profile</h4>
-                                <p class="text-xs leading-5">View and edit your personal information to suit your style.</p>
+                                <p class="text-xs leading-5">View and edit your personal information to suit your style.
+                                </p>
                             </div>
                         </button>
 
-                        <button class="w-full flex-1 xsm:min-w-[295px] xsm:max-w-[295px] text-left flex flex-wrap xsm:flex-nowrap gap-6 items-center px-4 xsm:px-7 py-4 bg-[#F3F3F3] rounded-5 border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)] hover:bg-opacity-50">
+                        <button
+                            class="w-full flex-1 xsm:min-w-[295px] xsm:max-w-[295px] text-left flex flex-wrap xsm:flex-nowrap gap-6 items-center px-4 xsm:px-7 py-4 bg-[#F3F3F3] rounded-5 border-[1.3px] border-[#828282] border-opacity-30 shadow-[-4px_4px_10px_rgba(0,0,0,0.05)] hover:bg-opacity-50">
                             <img class="" src="../svg/padlock-2.svg" />
                             <div class="tracking-wider leading-5 text-black-2">
                                 <h4 class="font-medium text-sm leading-5 mb-1">Manage Password</h4>
-                                <p class="text-xs leading-5">This allows you to save, recall and enter password if forgotten.</p>
+                                <p class="text-xs leading-5">This allows you to save, recall and enter password if
+                                    forgotten.</p>
                             </div>
                         </button>
                     </div>
@@ -86,21 +102,58 @@
             </div>
         </section>
     </main>
-    <div id="review-modal" class="hide-modal fixed top-0 bottom-0 flex items-center justify-center w-full h-full bg-black bg-opacity-70 z-60 transition-all ease-linear duration-[400ms]" onclick="viewModal(false)">
-        <div class="bg-white px-10 pt-10 pb-9 max-w-[600px] flex flex-col items-center border border-[#E2E2E2] rounded-10 shadow-[-5px_5px_25px_rgba(0,0,0,0.06)] delay-300 ease-linear duration-[400ms]">
+    <div id="review-modal"
+        class="hide-modal fixed top-0 bottom-0 flex items-center justify-center w-full h-full bg-black bg-opacity-70 z-60 transition-all ease-linear duration-[400ms]"
+        onclick="viewModal(false)">
+        <div
+            class="bg-white px-10 pt-10 pb-9 max-w-[600px] flex flex-col items-center border border-[#E2E2E2] rounded-10 shadow-[-5px_5px_25px_rgba(0,0,0,0.06)] delay-300 ease-linear duration-[400ms]">
             <img class="w-14 h-14 mb-1.5" src="../img/performance-1.png" />
             <h1 class="text-brand-green font-black leading-[66px] tracking-tight text-[44px] mb-3">Review Course</h1>
-            <div class="flex gap-3 items-center mb-8">
-                <img class="object-scale-down w-14 h-14" src="../img/star-filled.png" />
-                <img class="object-scale-down mb-2 w-fit h-fit" src="../img/star.png" />
-                <img class="object-scale-down mb-2 w-fit h-fit" src="../img/star.png" />
-                <img class="object-scale-down mb-2 w-fit h-fit" src="../img/star.png" />
-                <img class="object-scale-down mb-2 w-fit h-fit" src="../img/star.png" />
+
+           
+
+
+            <div class="rating">
+                <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon">★</span>
+                </label>
+                <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                </label>
+                <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                </label>
+                <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                </label>
+                <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                </label>
             </div>
+
+
             <h3 class="text-black-2 font-medium text-[21px] leading-8 tracking-tight mb-7">Course Completed</h3>
             <form>
-                <textarea class="w-[483px] h-[86px] mb-8 px-3 py-1.5 text-[#57584F] text-opacity-100 placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 focus:border-opacity-80 text-sm leading-7 tracking-tight rounded" placeholder="Additional Feedback would be appreciated (Optional)"></textarea>
-                <button class="block mx-auto uppercase border border-brand-green bg-brand-green rounded-5 px-16 py-4 text-white filled-hover">
+                <textarea
+                    class="w-[483px] h-[86px] mb-8 px-3 py-1.5 text-[#57584F] text-opacity-100 placeholder:text-opacity-[65%] border border-[#959595] border-opacity-30 focus:border-opacity-80 text-sm leading-7 tracking-tight rounded"
+                    placeholder="Additional Feedback would be appreciated (Optional)"></textarea>
+                <button
+                    class="block mx-auto uppercase border border-brand-green bg-brand-green rounded-5 px-16 py-4 text-white filled-hover">
                     Submit
                 </button>
             </form>
@@ -108,4 +161,5 @@
     </div>
 </body>
 <script src="../js/hcp.js"></script>
+
 </html>
